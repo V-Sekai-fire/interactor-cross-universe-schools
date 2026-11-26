@@ -445,11 +445,14 @@ defmodule Cu.Faceoff do
   def unproved(scores), do: Enum.count(scores, fn {_, s} -> s == nil end)
   def flip(scores), do: Map.new(scores, fn {seed, s} -> {seed, s && 2 - s} end)
   def mutant({name, tuple}, index), do: {"#{name}+#{Enum.at(@weights, index)}", put_elem(tuple, index, elem(tuple, index) * 2)}
+  def mutant({name, tuple}, index, :half), do: {"#{name}-#{Enum.at(@weights, index)}", put_elem(tuple, index, div(elem(tuple, index), 2))}
+  def mutant(school, index, :double), do: mutant(school, index)
   def as_player({name, tuple}), do: {name, weights(tuple)}
   def row(scores), do: %{"wins" => wins(scores), "points" => total(scores), "unproved" => unproved(scores), "by_seed" => Map.new(scores, fn {k, v} -> {to_string(k), v} end)}
-  def improve(school, other, parent_vs_other) do
-    Enum.reduce_while(0..4, {school, []}, fn index, {_, tried} ->
-      candidate = mutant(school, index)
+  def improve(school, other, parent_vs_other, moves \\ [:double]) do
+    options = for move <- moves, index <- 0..4, elem(mutant(school, index, move), 1) != elem(school, 1), do: {index, move}
+    Enum.reduce_while(options, {school, []}, fn {index, move}, {_, tried} ->
+      candidate = mutant(school, index, move)
       against_parent = series(as_player(candidate), as_player(school))
       entry = %{"mutant" => elem(candidate, 0), "weights" => Tuple.to_list(elem(candidate, 1)), "against_parent" => row(against_parent)}
       against_other = if wins(against_parent) >= 5, do: series(as_player(candidate), as_player(other)), else: nil
@@ -479,12 +482,42 @@ defmodule Cu.Faceoff do
     File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
     IO.puts(Cu.json(summary))
   end
-  def round(steady, banker, base) do
-    {new_steady, steady_tried} = improve(steady, banker, flip(base))
-    {new_banker, banker_tried} = improve(banker, steady, base)
+  def round(steady, banker, base, moves \\ [:double]) do
+    {new_steady, steady_tried} = improve(steady, banker, flip(base), moves)
+    {new_banker, banker_tried} = improve(banker, steady, base, moves)
     changed = new_steady != steady or new_banker != banker
     finals = [new_steady, new_banker]
     %{"round" => %{"steady" => steady_tried, "banker" => banker_tried}, "schools_after" => Map.new(finals, fn {n, w} -> {n, Tuple.to_list(w)} end),
       "distinct_after" => if(changed, do: distinct_after(finals), else: "no change")}
+  end
+  def start do
+    previous = Path.join(Path.dirname(Cu.results()), "iteration-3/summary.json")
+    case File.read(previous) do
+      {:ok, text} -> text |> :json.decode() |> Map.get("schools_after") |> after_schools()
+      _ -> [{"steady", @steady}, {"banker", @banker}]
+    end
+  end
+  def after_schools(nil), do: [{"steady", @steady}, {"banker", @banker}]
+  def after_schools(map), do: map |> Enum.map(fn {name, list} -> {name, List.to_tuple(list)} end) |> Enum.sort_by(fn {n, _} -> if String.starts_with?(n, "steady"), do: 0, else: 1 end)
+  def iterate(limit \\ 3) do
+    File.mkdir_p!(Cu.results())
+    [first, second] = start()
+    mirror = series(as_player(first), {"#{elem(first, 0)}-mirror", weights(elem(first, 1))})
+    idle = series({"idle", weights({0, 0, 0, 0, 0})}, as_player(first))
+    lanes = %{"mirror_found" => Enum.count(mirror, fn {_, s} -> s == 1.0 end), "idle_found" => Enum.count(idle, fn {_, s} -> s != nil and s < 1 end)}
+    IO.puts("calibration: #{inspect(lanes)}")
+    rounds = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: rounds(first, second, 1, limit, []), else: "not run: calibration under 8 of 8"
+    summary = %{"start" => Map.new([first, second], fn {n, w} -> {n, Tuple.to_list(w)} end), "lanes" => lanes, "rounds" => rounds}
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    IO.puts(Cu.json(summary))
+  end
+  def rounds(_a, _b, n, limit, done) when n > limit, do: done
+  def rounds(a, b, n, limit, done) do
+    base = series(as_player(b), as_player(a))
+    IO.puts("round #{n}: #{elem(b, 0)} against #{elem(a, 0)}: #{wins(base)} of 8 seeds won, #{total(base)} points of 16")
+    r = round(a, b, base, [:double, :half])
+    [a2, b2] = r["schools_after"] |> after_schools()
+    entry = Map.merge(r, %{"round" => n, "baseline" => row(base)})
+    if {a2, b2} == {a, b}, do: done ++ [entry], else: rounds(a2, b2, n + 1, limit, done ++ [entry])
   end
 end
