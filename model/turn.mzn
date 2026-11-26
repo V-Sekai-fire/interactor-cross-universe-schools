@@ -2,7 +2,7 @@
 % Copyright (c) 2026 K. S. Ernest (iFire) Lee. Unofficial; the game is copyright Cross Universe, https://crossuniverse.jp/
 int: mine;  set of int: MINE = 1..mine;
 array[MINE] of int: attack;  array[MINE] of int: defense;  array[MINE] of int: level;
-array[MINE] of bool: shares;  array[MINE] of bool: in_hand;  array[MINE] of bool: retirable;
+array[MINE] of bool: shares;  array[MINE] of bool: in_hand;  array[MINE] of bool: retirable;  array[MINE] of bool: rights;
 int: theirs;  set of int: THEIRS = 1..theirs;
 array[THEIRS] of int: their_attack;  array[THEIRS] of int: their_defense;  array[THEIRS] of int: their_level;
 int: my_life;  int: their_life;  int: mana;
@@ -41,6 +41,7 @@ constraint forall(i in MINE)(retire[i] = 2 -> stands[mine + 1, i]);
 constraint forall(k in SLOT)(used[k] <-> target[k] > 0);
 constraint forall(k in SLOT where k > 1)(used[k] -> used[k - 1]);
 constraint forall(i in MINE, k in SLOT)(slot[i] = k -> stands[k, i]);
+constraint forall(i in MINE where not rights[i])(slot[i] = 0);
 constraint forall(i, j in MINE where i > 1 /\ i != j)((slot[i] > 0 /\ slot[i] = slot[j]) -> (slot[1] = slot[i] /\ shares[i]));
 constraint forall(k in SLOT, j in THEIRS)(target[k] = j -> their_stands[k, j]);
 constraint forall(k in SLOT, j in THEIRS where j > 1)(target[k] = 1 -> not their_stands[k, j]);
@@ -66,7 +67,8 @@ var 0..my_life: life_lost = min(my_life, sum(hurt));
 var int: kills = sum(j in THEIRS where j > 1)(their_level[j] * (1 - bool2int(their_stands[mine + 1, j])));
 var int: board = sum(i in MINE where i > 1)(level[i] * bool2int(stays[i]));
 var 0..5: bank = min(5, min(5, left) + 5 - level[1]);
-var int: objective = weight_life * life_lost - weight_damage * damage - weight_kill * kills - weight_board * board - weight_bank * bank;
+var bool: lethal = damage >= their_life;
+var int: objective = -1000 * bool2int(lethal) + weight_life * life_lost - weight_damage * damage - weight_kill * kills - weight_board * board - weight_bank * bank;
 solve :: int_search(retire ++ [summon] ++ slot ++ target, smallest, indomain_min) minimize objective;
 
 output ["objective = ", show(objective), ";\nretire = ", show(retire), ";\nsummon = ", show(summon), ";\nearly = ", show(early),

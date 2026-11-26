@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
 [Unit]
-Description=Cross Universe schools of play style, one frontier-learning run (oneshot, CPU only)
+Description=Cross Universe schools of play style: face-off iteration (oneshot, Turbo on the GPU, waits while VRChat runs)
 
 [Service]
 Type=oneshot
@@ -15,6 +15,6 @@ IOSchedulingClass=idle
 MemoryHigh=3G
 MemoryMax=4G
 ExecCondition=/bin/sh -c 'test "$(cut -d. -f1 /proc/loadavg)" -lt 4'
-ExecStart=/home/fire/.pixi/bin/elixir tools/schools.exs run
+ExecStart=/home/fire/.pixi/bin/elixir tools/schools.exs faceoff
 StandardOutput=append:/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/run.log
 StandardError=append:/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/run.log

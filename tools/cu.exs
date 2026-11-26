@@ -8,9 +8,9 @@ defmodule Cu do
   def frontier, do: System.get_env("PERSONA_FRONTIER", "/mnt/fire/3-interactor/interactor-persona-frontier")
   def minizinc, do: System.get_env("MINIZINC_HOME", "/mnt/fire/6-datasource/minizinc-bundle/x/MiniZincIDE-2.11.0-x86_64-linux-gnu")
   def oracle, do: System.get_env("TURBO_ORACLE", "/mnt/fire/6-datasource/turbo-runs/cp_dump")
-  def work, do: System.get_env("CU_WORK", Path.join(@root, ".work"))
+  def work, do: Process.get(:cu_work) || System.get_env("CU_WORK", Path.join(@root, ".work"))
   def model, do: Path.join(@root, "model/turn.mzn")
-  def results, do: Path.join(@root, "results/iteration-2")
+  def results, do: System.get_env("CU_RESULTS", Path.join(@root, "results/iteration-3"))
   def traces, do: Path.join(results(), "traces.jsonl")
   def json(term), do: IO.iodata_to_binary(:json.encode(term))
 end
@@ -44,8 +44,9 @@ defmodule Cu.Gen do
     :rand.seed(:exsss, {seed, g * 10 + mana, 97 + attempt})
     pool = Cu.Cards.pool()
     board = %{mine: side(pool, g + @hand), field: g, theirs: side(pool, g), my_life: 10, their_life: 10, mana: mana}
-    if winnable?(board), do: draw(g, mana, seed, attempt + 1), else: board
+    if winnable?(board), do: draw(g, mana, seed, attempt + 1), else: all_rights(board)
   end
+  def all_rights(board), do: Map.put(board, :rights, Enum.map(board.mine, fn _ -> true end))
   def winnable?(board), do: (board.mine |> Enum.map(& &1.attack) |> Enum.sum()) - hd(board.theirs).defense >= board.their_life
   def side(pool, n) do
     partner = pool |> Enum.filter(&(&1.level <= 5)) |> Enum.random()
@@ -54,7 +55,7 @@ defmodule Cu.Gen do
   end
   def board(mine, hand, theirs, mana) do
     cards = &Enum.map(&1, fn id -> Cu.Cards.find(id) end)
-    %{mine: cards.(mine ++ hand), field: length(mine) - 1, theirs: cards.(theirs), my_life: 10, their_life: 10, mana: mana}
+    all_rights(%{mine: cards.(mine ++ hand), field: length(mine) - 1, theirs: cards.(theirs), my_life: 10, their_life: 10, mana: mana})
   end
   def places(board), do: Enum.with_index(board.mine, 1)
   def in_hand(board), do: Enum.map(places(board), fn {_, i} -> i > board.field + 1 end)
@@ -65,7 +66,7 @@ defmodule Cu.Gen do
     col = fn side, key -> list(Enum.map(side, &Map.fetch!(&1, key))) end
     """
     mine = #{length(board.mine)}; attack = #{col.(board.mine, :attack)}; defense = #{col.(board.mine, :defense)}; level = #{col.(board.mine, :level)};
-    shares = #{list(shares(board))}; in_hand = #{list(in_hand(board))}; retirable = #{list(retirable(board))};
+    shares = #{list(shares(board))}; in_hand = #{list(in_hand(board))}; retirable = #{list(retirable(board))}; rights = #{list(board.rights)};
     theirs = #{length(board.theirs)}; their_attack = #{col.(board.theirs, :attack)}; their_defense = #{col.(board.theirs, :defense)}; their_level = #{col.(board.theirs, :level)};
     my_life = #{board.my_life}; their_life = #{board.their_life}; mana = #{board.mana};
     weight_damage = #{w.damage}; weight_kill = #{w.kill}; weight_board = #{w.board}; weight_life = #{w.life}; weight_bank = #{w.bank};
@@ -125,7 +126,8 @@ defmodule Cu.Rules do
       {not Enum.all?(who, &MapSet.member?(st.mine, &1)), "an attacker is not on the field"},
       {not MapSet.member?(st.theirs, tgt), "the target is not on the field"},
       {tgt == 1 and MapSet.size(st.theirs) > 1, "their partner is attacked while their units stand"},
-      {length(who) > 1 and not combined?(st, who), "a combined attack without the partner or a shared type"}
+      {length(who) > 1 and not combined?(st, who), "a combined attack without the partner or a shared type"},
+      {Enum.any?(who, &(not Enum.at(board.rights, &1 - 1))), "an attacker has no attack right"}
     ]
     |> first_fault(:ok)
     |> then(fn verdict -> if verdict == :ok, do: fight(board, st, who, tgt), else: verdict end)
@@ -155,10 +157,11 @@ defmodule Cu.Rules do
     levels = fn side, set -> for({c, i} <- Enum.with_index(side, 1), i > 1 and MapSet.member?(set, i), do: c.level) |> Enum.sum() end
     their_start = levels.(board.theirs, MapSet.new(1..length(board.theirs)))
     %{damage: min(board.their_life, st.hit), life_lost: min(board.my_life, st.hurt), kills: their_start - levels.(board.theirs, st.theirs),
-      board: levels.(board.mine, st.mine), bank: min(5, min(5, st.mana) + 5 - level(board, 1)), steps: st.steps}
+      board: levels.(board.mine, st.mine), bank: min(5, min(5, st.mana) + 5 - level(board, 1)), steps: st.steps,
+      lethal: st.hit >= board.their_life, mine_left: Enum.sort(MapSet.to_list(st.mine)), theirs_left: Enum.sort(MapSet.to_list(st.theirs)), mana_left: st.mana}
   end
   def value({:illegal, _}, _w), do: nil
-  def value(o, w), do: w.life * o.life_lost - w.damage * o.damage - w.kill * o.kills - w.board * o.board - w.bank * o.bank
+  def value(o, w), do: -1000 * if(o.lethal, do: 1, else: 0) + w.life * o.life_lost - w.damage * o.damage - w.kill * o.kills - w.board * o.board - w.bank * o.bank
 end
 
 defmodule Cu.Solve do
@@ -177,13 +180,27 @@ defmodule Cu.Solve do
   end
   def whole?(plan), do: Enum.all?([plan.retire, plan.summon, plan.slot, plan.target])
   def mzn(args), do: System.cmd(Path.join(Cu.minizinc(), "bin/minizinc"), args, env: [{"LD_LIBRARY_PATH", Path.join(Cu.minizinc(), "lib")}], stderr_to_stdout: true)
-  def chuffed(model, dzn) do
-    {out, _} = mzn(["--solver", "chuffed", "-t", "120000", model, dzn])
-    objective = word(out, "objective")
-    %{optimal: String.contains?(out, "=========="), objective: objective && String.to_integer(objective), plan: plan(out)}
+  def vrchat? do
+    case System.cmd("/mnt/c/Windows/System32/tasklist.exe", ["/FI", "IMAGENAME eq VRChat.exe"], stderr_to_stdout: true) do
+      {out, 0} -> String.contains?(out, "VRChat.exe")
+      _ -> true
+    end
+  rescue
+    _ -> true
   end
+  def engine do
+    if vrchat?() do
+      IO.puts("VRChat is running: waiting for it to close before the next GPU solve")
+      Process.sleep(30_000)
+      engine()
+    else
+      "gpu"
+    end
+  end
+  def engine_args("gpu"), do: ["--engine", "gpu", "--slice", "500", "--duty", System.get_env("CU_GPU_DUTY", "50"), "--max-gpu", "100"]
   def turbo(model, dzn) do
     dir = Cu.work()
+    chosen = engine()
     scratch = Path.join([dir, "turbo_solve", "party"])
     [fzn, ozn, cp, ck] = for name <- ~w(x.fzn x.ozn party.cp ck.bin), do: Path.join(dir, name)
     for stale <- [ck, ck <> ".status", Path.join(scratch, "result.txt"), Path.join(scratch, "solution.mzn")], do: File.rm(stale)
@@ -191,10 +208,11 @@ defmodule Cu.Solve do
     {dump, 0} = System.cmd(Path.join(Cu.frontier(), ".lake/build/bin/frontier_frontend"), ["--dump", fzn])
     File.write!(cp, dump)
     env = [{"TMPDIR", dir}, {"ELIXIR_ERL_OPTIONS", "+fnu"}]
-    args = ["600", "elixir", "tools/turbo_player.exs", cp, "--fzn", fzn, "--checkpoint", ck, "--max-gpu", "100", "--slice", "2000"]
+    args = ["600", "elixir", "tools/turbo_player.exs", cp, "--fzn", fzn, "--checkpoint", ck] ++ engine_args(chosen)
     {log, code} = System.cmd("timeout", args, cd: Cu.frontier(), env: env, stderr_to_stdout: true)
-    Map.put(read(scratch, ozn, code, log), :frontend_equal, frontend_equal?(fzn, dump))
+    read(scratch, ozn, code, log) |> Map.put(:frontend_equal, frontend_equal?(fzn, dump)) |> Map.put(:engine, chosen) |> Map.put(:root, root?(dump))
   end
+  def root?(dump), do: String.starts_with?(dump, "bot 0\nvariables 0\n")
   def frontend_equal?(fzn, dump) do
     {theirs, code} = System.cmd(Cu.oracle(), ["-arch", "barebones", "-or", "1", "-sub", "0", fzn], stderr_to_stdout: false)
     code == 0 and theirs == dump
@@ -206,8 +224,14 @@ defmodule Cu.Solve do
   def read(_scratch, _ozn, code, log) when code != 0, do: %{exhaustive: false, bound: nil, nodes: nil, plan: plan(""), error: String.slice(log, -300, 300)}
   def read(scratch, ozn, 0, _log) do
     result = File.read!(Path.join(scratch, "result.txt"))
-    [_, bound, nodes, exhaustive] = Regex.run(~r/bound (-?\d+) nodes (\d+) fails \d+ depth_max \d+ exhaustive (\d)/, result)
-    %{exhaustive: exhaustive == "1", bound: String.to_integer(bound), nodes: String.to_integer(nodes), plan: plan(printed(ozn, Path.join(scratch, "solution.mzn")))}
+    blocks = Regex.scan(~r/bound (-?\d+) nodes (\d+) fails \d+ depth_max \d+ exhaustive (\d)/, result)
+    [_, approx] = Regex.run(~r/approx (-?\d+)/, result)
+    nodes = blocks |> Enum.map(fn [_, _, n, _] -> String.to_integer(n) end) |> Enum.sum()
+    whole = case Regex.run(~r/exhaustive blocks (\d+) of (\d+)/, result) do
+      [_, done, all] -> done == all
+      nil -> blocks != [] and Enum.all?(blocks, fn [_, _, _, e] -> e == "1" end)
+    end
+    %{exhaustive: whole, bound: String.to_integer(approx), nodes: nodes, plan: plan(printed(ozn, Path.join(scratch, "solution.mzn")))}
   end
 end
 
@@ -232,13 +256,13 @@ defmodule Cu.Run do
   end
   def solve(board, w, lane \\ "player") do
     path = dzn(board, w)
-    judge(board, w, Cu.Solve.turbo(model_for(lane), path), Cu.Solve.chuffed(Cu.model(), path))
+    judge(board, w, Cu.Solve.turbo(model_for(lane), path))
   end
-  def judge(board, w, turbo, chuffed) do
+  def judge(board, w, turbo) do
     outcome = if Cu.Solve.whole?(turbo.plan), do: Cu.Rules.play(board, turbo.plan), else: {:illegal, "no plan"}
     value = Cu.Rules.value(outcome, w)
-    proved = turbo.exhaustive and chuffed.optimal and turbo.bound == chuffed.objective and value == turbo.bound
-    %{proved: proved, outcome: outcome, value: value, turbo: turbo, chuffed: chuffed, weights: w}
+    proved = value != nil and (turbo.root or (turbo.exhaustive and value == turbo.bound))
+    %{proved: proved, outcome: outcome, value: value, turbo: turbo, weights: w}
   end
   def distinct?(a, b) do
     a.proved and b.proved and Cu.Rules.value(b.outcome, a.weights) > a.value and Cu.Rules.value(a.outcome, b.weights) > b.value
@@ -250,8 +274,8 @@ defmodule Cu.Run do
   def trace(level, seed, name, lane, board, r) do
     row = %{"level" => key(level), "seed" => seed, "player" => name, "lane" => lane, "weights" => show(r.weights), "proved" => r.proved,
             "outcome" => show(r.outcome), "value" => r.value, "turbo_bound" => r.turbo.bound, "turbo_nodes" => r.turbo.nodes,
-            "turbo_exhaustive" => r.turbo.exhaustive, "chuffed_objective" => r.chuffed.objective, "frontend_equal" => r.turbo.frontend_equal,
-            "plan" => show(r.turbo.plan), "board" => cards(board)}
+            "turbo_exhaustive" => r.turbo.exhaustive, "solved_at_root" => r.turbo.root, "frontend_equal" => r.turbo.frontend_equal,
+            "plan" => show(r.turbo.plan), "board" => cards(board), "engine" => r.turbo[:engine]}
     File.write!(Cu.traces(), Cu.json(row) <> "\n", [:append])
     r
   end
@@ -259,7 +283,7 @@ defmodule Cu.Run do
     for seed <- 1..8, into: %{} do
       board = Cu.Gen.level(level, seed)
       r = trace(level, seed, name, lane, board, solve(board, w, lane))
-      IO.puts("  #{key(level)} seed=#{seed} #{name} #{lane} proved=#{r.proved} bound=#{inspect(r.turbo.bound)} chuffed=#{inspect(r.chuffed.objective)} nodes=#{inspect(r.turbo.nodes)}")
+      IO.puts("  #{key(level)} seed=#{seed} #{name} #{lane} proved=#{r.proved} bound=#{inspect(r.turbo.bound)} value=#{inspect(r.value)} nodes=#{inspect(r.turbo.nodes)}")
       {seed, r}
     end
   end
@@ -315,5 +339,152 @@ defmodule Cu.Frontier do
     row = %{"name" => name, "rung" => best["rung"], "scores" => strip(best)["scores"], "tried" => tried, "school" => school?(best)}
     kept = if school?(best), do: kept ++ [{name, best["runs"]}], else: kept
     {kept, [row | report]}
+  end
+end
+
+defmodule Cu.Match do
+  @turns 6
+  @view 3
+  def turns, do: @turns
+  def deal(seed) do
+    :rand.seed(:exsss, {seed, 77, 3})
+    pool = Cu.Cards.pool()
+    Map.new([1, 2], fn seat -> {seat, seat(pool)} end)
+  end
+  def seat(pool) do
+    partner = pool |> Enum.filter(&(&1.level <= 5)) |> Enum.random()
+    deck = (Enum.flat_map(pool, &List.duplicate(&1, 3)) -- [partner]) |> Enum.take_random(29) |> Enum.shuffle()
+    {field, rest} = Enum.split(deck, 2)
+    {hand, deck} = Enum.split(rest, 2)
+    %{partner: partner, field: field, hand: hand, deck: deck, life: 10, carried: 0}
+  end
+  def mana(side), do: min(5, min(5, side.carried) + 5 - side.partner.level)
+  def draw(side, 1), do: side
+  def draw(%{deck: [card | deck]} = side, _turn), do: %{side | hand: side.hand ++ [card], deck: deck}
+  def view(side), do: Enum.take(side.hand, -@view)
+  def board(me, them, turn) do
+    if length(me.field) > 4, do: raise("a field of #{length(me.field)} units: the turn limit no longer keeps it under 5")
+    mine = [me.partner | me.field] ++ view(me)
+    %{mine: mine, field: length(me.field), theirs: [them.partner | them.field], my_life: me.life, their_life: them.life, mana: mana(me),
+      rights: Enum.map(mine, fn _ -> turn > 1 end)}
+  end
+  def kept(cards, left, offset), do: for({c, i} <- Enum.with_index(cards, offset), i in left, do: c)
+  def after_turn(me, them, board, plan, o) do
+    seen = view(me)
+    summoned = if plan.summon > 0, do: [Enum.at(board.mine, plan.summon - 1)], else: []
+    field = kept(me.field, o.mine_left, 2) ++ kept(seen, o.mine_left, 2 + length(me.field))
+    {%{me | field: field, hand: me.hand -- summoned, life: me.life - o.life_lost, carried: o.mana_left},
+     %{them | field: kept(them.field, o.theirs_left, 2), life: them.life - o.damage}}
+  end
+  def ended(sides, turn) do
+    cond do
+      sides[1].life <= 0 and sides[2].life <= 0 -> {:draw, "both partners fell"}
+      sides[1].life <= 0 -> {2, "life"}
+      sides[2].life <= 0 -> {1, "life"}
+      turn < @turns -> nil
+      true -> at_cap(sides)
+    end
+  end
+  def strength(side), do: side.field |> Enum.map(& &1.level) |> Enum.sum()
+  def at_cap(sides) do
+    cond do
+      sides[1].life != sides[2].life -> {if(sides[1].life > sides[2].life, do: 1, else: 2), "more life"}
+      strength(sides[1]) != strength(sides[2]) -> {if(strength(sides[1]) > strength(sides[2]), do: 1, else: 2), "more levels on the field"}
+      true -> {:draw, "equal"}
+    end
+  end
+  def play(sides, schools, tag, turn \\ 1, log \\ []) do
+    seat = if rem(turn, 2) == 1, do: 1, else: 2
+    other = 3 - seat
+    {name, w} = schools[seat]
+    me = draw(sides[seat], turn)
+    board = board(me, sides[other], turn)
+    r = Cu.Run.solve(board, w)
+    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine],
+            "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
+            "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
+    File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])
+    next(sides, schools, tag, turn, log ++ [row], r, me, board, seat)
+  end
+  def next(_sides, _schools, _tag, turn, log, %{proved: false}, _me, _board, _seat), do: %{result: :unproved, reason: "turn #{turn}", log: log}
+  def next(sides, schools, tag, turn, log, r, me, board, seat) do
+    other = 3 - seat
+    {me, them} = after_turn(me, sides[other], board, r.turbo.plan, r.outcome)
+    sides = sides |> Map.put(seat, me) |> Map.put(other, them)
+    case ended(sides, turn) do
+      nil -> play(sides, schools, tag, turn + 1, log)
+      {result, reason} -> %{result: result, reason: reason, log: log, life: {sides[1].life, sides[2].life}}
+    end
+  end
+  def points(%{result: :draw}, _seat), do: 0.5
+  def points(%{result: :unproved}, _seat), do: nil
+  def points(%{result: seat}, seat), do: 1.0
+  def points(_, _), do: 0.0
+  def faceoff({a, wa}, {b, wb}, seed) do
+    first = play(deal(seed), %{1 => {a, wa}, 2 => {b, wb}}, "#{a}-#{b}-#{seed}-a")
+    second = play(deal(seed), %{1 => {b, wb}, 2 => {a, wa}}, "#{a}-#{b}-#{seed}-b")
+    pa = [points(first, 1), points(second, 2)]
+    score = if Enum.any?(pa, &is_nil/1), do: nil, else: Enum.sum(pa)
+    row = %{"a" => a, "b" => b, "seed" => seed, "score_a" => score, "first" => %{"result" => to_string(first.result), "reason" => first.reason},
+            "second" => %{"result" => to_string(second.result), "reason" => second.reason}}
+    File.write!(Path.join(Cu.results(), "faceoffs.jsonl"), Cu.json(row) <> "\n", [:append])
+    IO.puts("  #{a} vs #{b} seed #{seed}: #{inspect(score)} (#{first.result} #{first.reason}; #{second.result} #{second.reason})")
+    score
+  end
+  def series(a, b), do: Map.new(1..8, &{&1, faceoff(a, b, &1)})
+end
+
+defmodule Cu.Faceoff do
+  import Cu.Run
+  @steady {2, 2, 2, 2, 1}
+  @banker {2, 2, 2, 2, 8}
+  @weights ~w(damage kill board life bank)
+  def series(a, b), do: Cu.Match.series(a, b)
+  def wins(scores), do: Enum.count(scores, fn {_, s} -> s != nil and s > 1 end)
+  def total(scores), do: scores |> Map.values() |> Enum.reject(&is_nil/1) |> Enum.sum()
+  def unproved(scores), do: Enum.count(scores, fn {_, s} -> s == nil end)
+  def flip(scores), do: Map.new(scores, fn {seed, s} -> {seed, s && 2 - s} end)
+  def mutant({name, tuple}, index), do: {"#{name}+#{Enum.at(@weights, index)}", put_elem(tuple, index, elem(tuple, index) * 2)}
+  def as_player({name, tuple}), do: {name, weights(tuple)}
+  def row(scores), do: %{"wins" => wins(scores), "points" => total(scores), "unproved" => unproved(scores), "by_seed" => Map.new(scores, fn {k, v} -> {to_string(k), v} end)}
+  def improve(school, other, parent_vs_other) do
+    Enum.reduce_while(0..4, {school, []}, fn index, {_, tried} ->
+      candidate = mutant(school, index)
+      against_parent = series(as_player(candidate), as_player(school))
+      entry = %{"mutant" => elem(candidate, 0), "weights" => Tuple.to_list(elem(candidate, 1)), "against_parent" => row(against_parent)}
+      against_other = if wins(against_parent) >= 5, do: series(as_player(candidate), as_player(other)), else: nil
+      entry = if against_other, do: Map.put(entry, "against_other", row(against_other)), else: entry
+      better = against_other != nil and total(against_other) > total(parent_vs_other)
+      IO.puts("#{elem(candidate, 0)}: #{wins(against_parent)} of 8 against its parent#{if against_other, do: ", #{total(against_other)} points against #{elem(other, 0)} (parent #{total(parent_vs_other)})", else: ""}#{if better, do: ", kept", else: ""}")
+      if better, do: {:halt, {candidate, tried ++ [Map.put(entry, "kept", true)]}}, else: {:cont, {school, tried ++ [entry]}}
+    end)
+  end
+  def distinct_after(schools) do
+    runs = for {name, tuple} <- schools, into: %{}, do: {name, all({2, 1}, name, weights(tuple))}
+    [{a, ra}, {b, rb}] = Map.to_list(runs)
+    %{"pair" => [a, b], "distinct_on_g2m1" => Enum.count(1..8, &distinct?(ra[&1], rb[&1]))}
+  end
+  def run do
+    File.mkdir_p!(Cu.results())
+    steady = {"steady", @steady}
+    banker = {"banker", @banker}
+    mirror = series(as_player(steady), {"steady-mirror", weights(@steady)})
+    idle = series({"idle", weights({0, 0, 0, 0, 0})}, as_player(steady))
+    lanes = %{"mirror_found" => Enum.count(mirror, fn {_, s} -> s == 1.0 end), "idle_found" => Enum.count(idle, fn {_, s} -> s != nil and s < 1 end)}
+    IO.puts("calibration: #{inspect(lanes)}")
+    base = series(as_player(banker), as_player(steady))
+    IO.puts("baseline banker against steady: #{wins(base)} of 8 seeds won, #{total(base)} points of 16")
+    summary = %{"lanes" => lanes, "mirror" => row(mirror), "idle" => row(idle), "baseline_banker_vs_steady" => row(base)}
+    summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.merge(summary, round(steady, banker, base)), else: Map.put(summary, "round", "not run: calibration under 8 of 8")
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    IO.puts(Cu.json(summary))
+  end
+  def round(steady, banker, base) do
+    {new_steady, steady_tried} = improve(steady, banker, flip(base))
+    {new_banker, banker_tried} = improve(banker, steady, base)
+    changed = new_steady != steady or new_banker != banker
+    finals = [new_steady, new_banker]
+    %{"round" => %{"steady" => steady_tried, "banker" => banker_tried}, "schools_after" => Map.new(finals, fn {n, w} -> {n, Tuple.to_list(w)} end),
+      "distinct_after" => if(changed, do: distinct_after(finals), else: "no change")}
   end
 end

@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
-# schools.exs  cards | check | probe [G MANA] | one G MANA SEED | run
+# schools.exs  cards | check | one G MANA SEED | run | faceoff
 Code.require_file("cu.exs", __DIR__)
 
 defmodule Cu.Cli do
@@ -21,32 +21,29 @@ defmodule Cu.Cli do
     results = for {name, mine, hand, theirs, mana, w, want} <- tests() do
       r = solve(Cu.Gen.board(mine, hand, theirs, mana), weights(w))
       ok = r.proved and r.value == want
-      IO.puts("  #{if ok, do: "ok  ", else: "FAIL"} #{name}: turbo #{inspect(r.turbo.bound)} chuffed #{inspect(r.chuffed.objective)} rules #{inspect(r.value)} want #{want} front end equal #{r.turbo.frontend_equal} nodes #{inspect(r.turbo.nodes)}")
+      IO.puts("  #{if ok, do: "ok  ", else: "FAIL"} #{name}: turbo #{inspect(r.turbo.bound)} rules #{inspect(r.value)} want #{want} front end equal #{r.turbo.frontend_equal} nodes #{inspect(r.turbo.nodes)}")
       ok
     end
+    results = results ++ match_tests()
     if Enum.all?(results), do: IO.puts("OK: #{length(results)} tests"), else: (IO.puts("FAILED"); System.halt(1))
   end
-  def main(["probe" | rest]) do
-    [g, mana] = Enum.map(rest ++ Enum.drop(["2", "1"], length(rest)), &String.to_integer/1)
-    players = [Cu.Frontier.steady() | for(i <- 0..4, do: put_elem(Cu.Frontier.steady(), i, elem(Cu.Frontier.steady(), i) * 8))]
-    for seed <- 1..8 do
-      board = Cu.Gen.level({g, mana}, seed)
-      plays = for w <- players do
-        c = Cu.Solve.chuffed(Cu.model(), dzn(board, weights(w)))
-        o = Cu.Rules.play(board, c.plan)
-        agree = Cu.Rules.value(o, weights(w)) == c.objective
-        "#{o.damage}/#{o.kills}/#{o.board}/#{o.life_lost}/#{o.bank}#{if agree, do: "", else: "!"}"
-      end
-      IO.puts("g=#{g}m#{mana} seed=#{seed} | #{Enum.join(plays, " ")}")
-    end
+  def side(partner, field, hand, deck) do
+    card = &Cu.Cards.find/1
+    %{partner: card.(partner), field: Enum.map(field, card), hand: Enum.map(hand, card), deck: Enum.map(deck, card), life: 10, carried: 0}
   end
-  def main(["one", g, mana, seed | _]) do
-    level = {String.to_integer(g), String.to_integer(mana)}
-    {us, r} = :timer.tc(fn -> solve(Cu.Gen.level(level, String.to_integer(seed)), weights(Cu.Frontier.steady())) end)
-    IO.puts("#{key(level)} seed #{seed}: proved #{r.proved} turbo #{inspect(r.turbo.bound)} chuffed #{inspect(r.chuffed.objective)} rules #{inspect(r.value)} nodes #{inspect(r.turbo.nodes)} front end equal #{r.turbo.frontend_equal} #{Float.round(us / 1.0e6, 1)} s")
+  def match_tests do
+    steady = {"steady", weights(Cu.Frontier.steady())}
+    sides = %{1 => side("CUU00074", [], [], ["CUU00043"]), 2 => side("CUU00034", ["CUU00233"], [], ["CUU00074"])}
+    lethal = Cu.Match.play(sides, %{1 => steady, 2 => steady}, "m01")
+    m01 = lethal.result == 2 and lethal.reason == "life" and length(lethal.log) == 2
+    IO.puts("  #{if m01, do: "ok  ", else: "FAIL"} m01 a combined attack takes the last life on turn 2: #{inspect(lethal.result)} #{lethal.reason} after #{length(lethal.log)} turns")
+    mirror = Cu.Match.faceoff(steady, {"steady-mirror", weights(Cu.Frontier.steady())}, 1)
+    IO.puts("  #{if mirror == 1.0, do: "ok  ", else: "FAIL"} m02 the mirror scores exactly 1 of 2: #{inspect(mirror)}")
+    [m01, mirror == 1.0]
   end
+  def main(["faceoff" | _]), do: Cu.Faceoff.run()
   def main(["run" | _]), do: Cu.Frontier.run()
-  def main(_), do: IO.puts("usage: schools.exs cards | check | probe [G MANA] | one G MANA SEED | run")
+  def main(_), do: IO.puts("usage: schools.exs cards | check | one G MANA SEED | run | faceoff")
 end
 
 Cu.Cli.main(System.argv())

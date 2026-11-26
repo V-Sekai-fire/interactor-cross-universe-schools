@@ -122,3 +122,36 @@ between a plan's outcome here and in the pinned rules engine, if that replay is 
 3 or more units a side, more than one turn, a reply by the other player, cards with abilities, spells and items,
 retiring the partner (the engine lists it as eligible and the translated rules say it cannot leave the field),
 hidden information, play against a person, the rules engine's own verdict on any plan.
+
+## Iteration 3: the schools face off
+
+Written before iteration 3 ran. It asks whether a school wins, and keeps a change to a school only when it wins
+more.
+
+**Changes to the solve, by the owner (2026-11-26).** Turbo runs on the GPU only: before every solve the tool checks
+that VRChat is not running (by absolute path; a failed check counts as running) and waits while it runs. No second
+solver: a solve is **proved** when Turbo's search is exhaustive and the plan it returns is legal and worth the bound
+under `Cu.Rules`, or when Turbo's preprocessing leaves no variable and no failure (`solved_at_root`), in which case
+the plan is the only legal one and `Cu.Rules` gives its value. The model also always prefers a plan that takes
+their last life, and units may attack only with an attack right (none on the first turn of a match). Iterations 1
+and 2 drew no winnable board and gave every unit a right, so their results stand.
+
+- **Match**: two seats, each dealt from the seed a partner of level 5 or lower and 29 cards from the 11 plain units
+  (at most three copies each): 2 on the field, 2 in hand, the rest the deck. Life 1000 each. Turns alternate, seat 1
+  first. Each turn: mana `min(5, min(5, carried) + 5 - partner level)`; draw one card (not on turn 1); the school
+  plays the proved plan of the one-turn model, seeing its field and the 3 newest cards in hand; no attack on turn 1.
+- **End**: a side whose life reaches 0 loses (both at once: a draw). After 6 turns, more life wins, then more levels
+  on the field, then a draw.
+- **Face-off** of A and B on a seed: two matches, A in seat 1 then in seat 2, the same deal. Points: win 1, draw ½.
+  A face-off with an unproved turn has no score and counts as no success.
+- **Calibration**, both must be 8 of 8 or the round is not run: **mirror** (`steady` against itself) scores exactly 1
+  of 2; **idle** (every weight 0) scores under 1 of 2 against `steady`.
+- **Baseline**: `banker` against `steady`, seeds 1 to 8.
+- **Improvement round**: for `steady`, then `banker`, the five mutants with one weight doubled, in the order damage,
+  kill, board, life, bank, each face their parent. A mutant that scores more than 1 of 2 on at least 5 seeds then
+  faces the other school, and replaces its parent if its points there are more than its parent's. At most one
+  replacement per school. After a replacement, the two schools' one-turn plays are compared on `g2m1` and the count
+  of distinct seeds is reported.
+- **Chosen by the agent**: the deal, the 6-turn limit, the hand view of 3, the tie-breaks, the 5-of-8 threshold,
+  doubling as the mutation, one round.
+- **Not measured**: longer matches, any lookahead past one turn, a hand over 3 cards, play in the rules engine.
