@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
-# fight_lottie.exs LEVEL SEED PLAYER OUT.lot [video] : one traced turn as a Lottie animation of shapes (no card art, names or text); `video` also renders OUT.mp4
+# fight_lottie.exs LEVEL SEED PLAYER OUT.lot [video] | match TAG OUT.lot [video] : a traced turn or match as Lottie shapes (no card art, names or text)
 Code.require_file("cu.exs", __DIR__)
 
 defmodule Cu.Lottie do
@@ -97,12 +97,13 @@ defmodule Cu.Lottie do
 
   def placed(%{position: []} = tk), do: [{0, point(tk.at_start)}]
   def placed(tk), do: [{0, point(tk.at_start)} | tk.position]
-  def tokens(board, st, first) do
+  @seats %{1 => [0.1, 0.45, 0.5], 2 => [0.68, 0.33, 0.12]}
+  def tokens(board, st, first, seat \\ 1) do
     mine = for {card, i} <- Cu.Gen.places(board), tk = Map.put(st.mine[i], :at_start, first.mine[i].at) do
-      layer("mine #{i} #{card.id}", token(card, [0.1, 0.45, 0.5], i == 1), placed(tk), tk.opacity, tk.scale)
+      layer("mine #{i} #{card.id}", token(card, @seats[seat], i == 1), placed(tk), tk.opacity, tk.scale)
     end
     them = for {card, j} <- Enum.with_index(board.theirs, 1), tk = Map.put(st.them[j], :at_start, first.them[j].at) do
-      layer("theirs #{j} #{card.id}", token(card, [0.68, 0.33, 0.12], j == 1), placed(tk), tk.opacity, tk.scale)
+      layer("theirs #{j} #{card.id}", token(card, @seats[3 - seat], j == 1), placed(tk), tk.opacity, tk.scale)
     end
     mine ++ them
   end
@@ -117,17 +118,52 @@ defmodule Cu.Lottie do
     shape = %{"ty" => "rc", "p" => moving(tidy(places)), "s" => moving(tidy(sizes)), "r" => fixed(4)}
     [plain(name, [group([shape, fill(color)])])] ++ counter(name, changes, {x, 62}, 0.8, color, last)
   end
-  def document(board, outcome, player) do
+  def scene(board, outcome, player, seat \\ 1, turn \\ nil) do
     first = start(board)
     {st, _} = Enum.reduce(outcome.steps, {first, @intro}, fn step, {st, t} -> {act(st, step, t, board), t + @step} end)
     last = @intro + @step * length(outcome.steps) + 45
     back = plain("ground", [group([box({480, 270}, {960, 540}, 0), fill([0.07, 0.08, 0.11])])])
     band = plain("school #{player}", [group([box({480, 6}, {960, 12}, 0), fill(Map.get(@tints, player, [0.6, 0.6, 0.6]))])])
     mana = counter("mana", st.mana, {60, 392}, 1.4, [0.95, 0.78, 0.25], last)
-    life = bar("my life", st.my_life, 60, [0.3, 0.75, 0.7], last) ++ bar("their life", st.their_life, 540, [0.9, 0.5, 0.3], last)
-    layers = [band] ++ mana ++ life ++ tokens(board, st, first) ++ [back]
-    %{"v" => "5.7.0", "fr" => @rate, "ip" => 0, "op" => last, "w" => 960, "h" => 540, "nm" => "Cross Universe turn, unofficial, #{player}", "ddd" => 0, "assets" => [],
-      "layers" => layers |> Enum.with_index(1) |> Enum.map(fn {l, n} -> l |> Map.put("ind", n) |> Map.update!("op", &min(&1, last)) end)}
+    {left, right} = if seat == 1, do: {st.my_life, st.their_life}, else: {st.their_life, st.my_life}
+    life = bar("seat 1 life", left, 60, @seats[1], last) ++ bar("seat 2 life", right, 540, @seats[2], last)
+    label = if turn, do: [plain("turn #{turn}", [number(turn, {466, 22}, 1.0, [0.9, 0.9, 0.9])])], else: []
+    layers = [band] ++ label ++ mana ++ life ++ tokens(board, st, first, seat) ++ [back]
+    {layers |> Enum.with_index(1) |> Enum.map(fn {l, n} -> l |> Map.put("ind", n) |> Map.update!("op", &min(&1, last)) end), last}
+  end
+  def wrap(layers, last, name, assets \\ []) do
+    %{"v" => "5.7.0", "fr" => @rate, "ip" => 0, "op" => last, "w" => 960, "h" => 540, "nm" => name, "ddd" => 0, "assets" => assets, "layers" => layers}
+  end
+  def document(board, outcome, player) do
+    {layers, last} = scene(board, outcome, player)
+    wrap(layers, last, "Cross Universe turn, unofficial, #{player}")
+  end
+  def turn_board(row, lives) do
+    b = row["board"]
+    card = &Cu.Cards.find/1
+    seat = row["seat"]
+    mine = Enum.map(b["mine"], card)
+    %{mine: mine, field: b["field"], theirs: Enum.map(b["theirs"], card), mana: b["mana"], my_life: lives[seat], their_life: lives[3 - seat],
+      rights: Enum.map(mine, fn _ -> row["turn"] > 1 end)}
+  end
+  def plan_of(p), do: %{retire: p["retire"], summon: p["summon"], early: p["early"], slot: p["slot"], target: p["target"]}
+  def match_document(rows, tag) do
+    {pieces, _, total} =
+      Enum.reduce(rows, {[], %{1 => 10, 2 => 10}, 0}, fn row, {acc, lives, offset} ->
+        board = turn_board(row, lives)
+        o = Cu.Rules.play(board, plan_of(row["plan"]))
+        {layers, length} = scene(board, o, row["school"], row["seat"], row["turn"])
+        id = "turn#{row["turn"]}"
+        comp = %{"ty" => 0, "nm" => id, "refId" => id, "w" => 960, "h" => 540, "ip" => offset, "op" => offset + length, "st" => offset,
+                 "ks" => %{"o" => fixed(100), "r" => fixed(0), "p" => fixed([480, 270, 0]), "a" => fixed([480, 270, 0]), "s" => fixed([100, 100, 100])}}
+        lives = lives |> Map.update!(3 - row["seat"], &(&1 - o.damage)) |> Map.update!(row["seat"], &(&1 - o.life_lost))
+        {acc ++ [{comp, %{"id" => id, "layers" => layers}}], lives, offset + length}
+      end)
+    layers = pieces |> Enum.map(&elem(&1, 0)) |> Enum.with_index(1) |> Enum.map(fn {l, n} -> Map.put(l, "ind", n) end)
+    wrap(layers, total, "Cross Universe match #{tag}, unofficial", Enum.map(pieces, &elem(&1, 1)))
+  end
+  def match_rows(tag) do
+    Path.join(Cu.results(), "turns.jsonl") |> File.stream!() |> Stream.map(&:json.decode/1) |> Enum.filter(&(&1["match"] == tag)) |> Enum.sort_by(& &1["turn"])
   end
 
   def row(level, seed, player) do
@@ -145,6 +181,16 @@ defmodule Cu.Lottie do
     {_, 0} = System.cmd("ffmpeg", ["-y", "-loglevel", "error", "-i", base <> ".gif", "-movflags", "+faststart", "-pix_fmt", "yuv420p", base <> ".mp4"], stderr_to_stdout: true)
     for spare <- [base <> ".json", base <> ".gif"], do: File.rm!(spare)
     IO.puts(base <> ".mp4")
+  end
+  def main(["match", tag, out, "video"]) do
+    main(["match", tag, out])
+    video(out)
+  end
+  def main(["match", tag, out]) do
+    rows = match_rows(tag)
+    if rows == [] or not Enum.all?(rows, & &1["proved"]), do: raise("no fully proved match #{tag}")
+    File.write!(out, Cu.json(match_document(rows, tag)))
+    IO.puts("#{out}: #{length(rows)} turns")
   end
   def main([level, seed, player, out, "video"]) do
     main([level, seed, player, out])
