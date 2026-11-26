@@ -10,7 +10,8 @@ defmodule Cu do
   def oracle, do: System.get_env("TURBO_ORACLE", "/mnt/fire/6-datasource/turbo-runs/cp_dump")
   def work, do: System.get_env("CU_WORK", Path.join(@root, ".work"))
   def model, do: Path.join(@root, "model/turn.mzn")
-  def traces, do: Path.join(@root, "results/traces.jsonl")
+  def results, do: Path.join(@root, "results/iteration-2")
+  def traces, do: Path.join(results(), "traces.jsonl")
   def json(term), do: IO.iodata_to_binary(:json.encode(term))
 end
 
@@ -268,7 +269,7 @@ end
 defmodule Cu.Frontier do
   import Cu.Run
   @levels [{2, 1}, {2, 4}]
-  @ladder [2, 4, 8]
+  @ladder [4, 8]
   @steady {2, 2, 2, 2, 1}
   @candidates [{"striker", 0}, {"hunter", 1}, {"keeper", 2}, {"warden", 3}, {"banker", 4}]
   def steady, do: @steady
@@ -285,18 +286,14 @@ defmodule Cu.Frontier do
     {runs, Map.new(runs, fn {g, rs} -> {g, successes(rs, Enum.map(kept, fn {n, by} -> {n, by[g]} end))} end)}
   end
   def total(scores), do: scores |> Map.values() |> Enum.sum()
-  def frontier?(scores), do: Enum.any?(Map.values(scores), &(&1 > 0 and &1 < 8))
   def climb(_name, _index, _kept, _levels, [], best, tried), do: {best, tried}
   def climb(name, index, kept, levels, [rung | rest], best, tried) do
     {runs, scores} = cells(name, raised(index, rung), kept, levels)
     IO.puts("#{name} rung #{rung}: #{inspect(scores)}")
     here = %{"rung" => rung, "scores" => scores, "runs" => runs}
     tried = tried ++ [strip(here)]
-    cond do
-      best != nil and total(scores) <= total(best["scores"]) -> {best, tried}
-      frontier?(scores) -> climb(name, index, kept, levels, rest, here, tried)
-      true -> {here, tried}
-    end
+    best = if best == nil or total(scores) > total(best["scores"]), do: here, else: best
+    climb(name, index, kept, levels, rest, best, tried)
   end
   def strip(here), do: %{"rung" => here["rung"], "scores" => Map.new(here["scores"], fn {g, s} -> {key(g), s} end)}
   def school?(best), do: Enum.any?(Map.values(best["scores"]), &(&1 == 8))
@@ -309,7 +306,7 @@ defmodule Cu.Frontier do
     {_, report} = Enum.reduce(@candidates, {[{"steady", base}], []}, &candidate(&1, &2, levels))
     proved = Map.new(base, fn {g, rs} -> {key(g), Enum.count(rs, fn {_, r} -> r.proved end)} end)
     summary = %{"lanes" => lanes, "calibrated_levels" => Enum.map(levels, &key/1), "baseline_proved" => proved, "candidates" => Enum.reverse(report)}
-    File.write!(Path.join(Cu.root(), "results/summary.json"), Cu.json(summary) <> "\n")
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
     IO.puts(Cu.json(summary))
   end
   def candidate(_, {kept, report}, []), do: {kept, report}

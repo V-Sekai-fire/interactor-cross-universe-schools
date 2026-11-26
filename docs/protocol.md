@@ -99,6 +99,18 @@ These were seen before this page was committed, with Chuffed alone except where 
 - Turbo on the CPU, one solve each: `g2m1` 4.3 s and 4,685 nodes; `g3m1` 49.7 s and 149,193 nodes; `g3m4` 34.5 s and
   89,253 nodes; each proved. The levels with 3 units a side are left out of this run for time.
 
+## Iteration 2: one change, made after a result
+
+Iteration 1 kept no school: every candidate scored 0 of 8 at rung 2, and the rule above tries a further rung only
+from a frontier cell, so rungs 4 and 8 were never tried. That rule is the one thing changed, and it is a post-hoc
+decision: it was made knowing iteration 1's result and the probe in "Before the run", which used a weight of 8.
+
+- The ladder for iteration 2 is 4, 8. Both rungs are tried for every candidate. The rung with the higher sum of
+  `s` over calibrated levels is kept, and a tie goes to rung 4. Rung 2 stands as measured in iteration 1.
+- Everything else is as above: the levels, the seeds, the baseline, the lanes, proved, distinct, and a school is
+  kept only with `s = 8` on a calibrated level. A candidate that has a cell with `0 < s < 8` and no 8 is reported
+  as the frontier.
+
 ## Real artifact
 
 Findings on a real artifact are their own lane and are never averaged into a rate: the Turbo port's dropped
