@@ -1,0 +1,8 @@
+// SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
+// SPDX-License-Identifier: MIT
+// CPU samples and process lifetimes of the face-off run, filtered to its cgroup; printed every 10 minutes and at exit.
+profile:hz:99 /cgroup == cgroupid("/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/cross-universe-schools.service")/ { @samples[comm] = count(); @user[comm, ustack(6)] = count(); }
+tracepoint:sched:sched_process_exec /cgroup == cgroupid("/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/cross-universe-schools.service")/ { @born[pid] = nsecs; @name[pid] = comm; @runs[comm] = count(); }
+tracepoint:sched:sched_process_exit /@born[pid]/ { @life_ms[@name[pid]] = hist((nsecs - @born[pid]) / 1000000); @total_ms[@name[pid]] = sum((nsecs - @born[pid]) / 1000000); delete(@born[pid]); delete(@name[pid]); }
+interval:s:600 { time("%H:%M:%S\n"); print(@samples); print(@runs); print(@total_ms); }
+END { clear(@born); clear(@name); }
