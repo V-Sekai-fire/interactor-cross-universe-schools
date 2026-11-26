@@ -180,8 +180,10 @@ defmodule Cu.Solve do
   end
   def whole?(plan), do: Enum.all?([plan.retire, plan.summon, plan.slot, plan.target])
   def mzn(args), do: System.cmd(Path.join(Cu.minizinc(), "bin/minizinc"), args, env: [{"LD_LIBRARY_PATH", Path.join(Cu.minizinc(), "lib")}], stderr_to_stdout: true)
-  def vrchat? do
-    case System.cmd("/mnt/c/Windows/System32/tasklist.exe", ["/FI", "IMAGENAME eq VRChat.exe"], stderr_to_stdout: true) do
+  @tasklist "/mnt/c/Windows/System32/tasklist.exe"
+  def vrchat?, do: File.exists?(@tasklist) and windows_vrchat?()
+  def windows_vrchat? do
+    case System.cmd(@tasklist, ["/FI", "IMAGENAME eq VRChat.exe"], stderr_to_stdout: true) do
       {out, 0} -> String.contains?(out, "VRChat.exe")
       _ -> true
     end

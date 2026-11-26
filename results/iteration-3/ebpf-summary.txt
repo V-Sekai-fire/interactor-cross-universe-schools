@@ -1,0 +1,43 @@
+# eBPF totals of the iteration 3 run (bpftrace, deploy/ebpf/faceoff.bt), at the halt
+
+## CPU samples at 99 Hz
+erts_sched_1	7780
+turbo_gpu	3643
+frontier_store	2476
+minizinc	1635
+erts_dios_9	666
+beam.smp	618
+erts_dios_8	591
+erts_dios_10	586
+frontier_fronte	546
+turbo_emit	458
+erts_aux_1	236
+nvidia-smi	208
+
+## summed lifetime of processes, ms
+beam.smp	362224
+erl_child_setup	360335
+timeout	230975
+frontier_store	26855
+tasklist.exe	10366
+minizinc	7646
+frontier_fronte	5620
+turbo_emit	4595
+nvidia-smi	3639
+cp_dump	2050
+turbo_gpu	1491
+inet_gethost	194
+
+## process starts
+dirname	882
+frontier_store	300
+basename	294
+readlink	147
+inet_gethost	147
+erlexec	147
+erl_child_setup	147
+erl	147
+elixir	147
+beam.smp	147
+nvidia-smi	100
+turbo_emit	99
