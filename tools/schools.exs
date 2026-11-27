@@ -26,7 +26,15 @@ defmodule Cu.Cli do
     IO.puts("  #{if m01, do: "ok  ", else: "FAIL"} m01 a combined attack takes the last life on turn 2: #{inspect(lethal.result)} #{lethal.reason} after #{length(lethal.log)} turns")
     mirror = Cu.Match.faceoff(steady, {"steady-mirror", weights(Cu.Frontier.steady())}, 1)
     IO.puts("  #{if mirror == 1.0, do: "ok  ", else: "FAIL"} m02 the mirror scores exactly 1 of 2: #{inspect(mirror)}")
-    [m01, mirror == 1.0]
+    ctx = fn turn, me, them -> %{turn: turn, me: %{life: me}, them: %{life: them}} end
+    w = fn d -> weights({d, 2, 2, 2, 1}) end
+    last = {:split, :last_turn, w.(9), w.(1)}
+    first = {:split, :first_turn, w.(9), w.(1)}
+    m03 = [Cu.Match.pick(last, ctx.(5, 10, 10)) == w.(9), Cu.Match.pick(last, ctx.(6, 10, 10)) == w.(9), Cu.Match.pick(last, ctx.(4, 10, 10)) == w.(1),
+           Cu.Match.pick({:split, :behind, w.(9), w.(1)}, ctx.(3, 8, 10)) == w.(9), Cu.Match.pick({:split, :behind, w.(9), w.(1)}, ctx.(3, 10, 10)) == w.(1),
+           Cu.Match.pick(first, ctx.(2, 10, 10)) == w.(9), Cu.Match.pick(first, ctx.(3, 10, 10)) == w.(1), Cu.Match.pick(w.(5), ctx.(1, 10, 10)) == w.(5)] |> Enum.all?()
+    IO.puts("  #{if m03, do: "ok  ", else: "FAIL"} m03 a split school picks its weights by the turn, the life and the seat's last turn")
+    [m01, mirror == 1.0, m03]
   end
   def main(["cards" | _]) do
     for c <- Cu.Cards.pool(), do: IO.puts("#{c.id} level #{c.level} attack #{c.attack} defense #{c.defense} #{Enum.join(c.types, ", ")}")
@@ -44,6 +52,7 @@ defmodule Cu.Cli do
   def main(["run" | _]), do: Cu.Frontier.run()
   def main(["faceoff" | _]), do: Cu.Faceoff.run()
   def main(["iterate" | _]), do: Cu.Faceoff.iterate()
+  def main(["split" | _]), do: Cu.Faceoff.split_run()
   def main(_), do: IO.puts("usage: schools.exs cards | check | one G MANA SEED | run | faceoff | iterate")
 end
 

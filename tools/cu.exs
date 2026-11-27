@@ -390,14 +390,20 @@ defmodule Cu.Match do
       true -> {:draw, "equal"}
     end
   end
+  def pick(%{damage: _} = w, _context), do: w
+  def pick({:split, predicate, when_true, otherwise}, context), do: if(holds?(predicate, context), do: when_true, else: otherwise)
+  def holds?(:last_turn, context), do: context.turn + 2 > @turns
+  def holds?(:behind, context), do: context.me.life < context.them.life
+  def holds?(:first_turn, context), do: context.turn <= 2
   def play(sides, schools, tag, turn \\ 1, log \\ []) do
     seat = if rem(turn, 2) == 1, do: 1, else: 2
     other = 3 - seat
     {name, w} = schools[seat]
     me = draw(sides[seat], turn)
     board = board(me, sides[other], turn)
+    w = pick(w, %{turn: turn, me: me, them: sides[other]})
     r = Cu.Run.solve(board, w)
-    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries],
+    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "weights" => Cu.Run.show(w), "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries],
             "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
             "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
     File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])
@@ -444,7 +450,46 @@ defmodule Cu.Faceoff do
   def mutant({name, tuple}, index), do: {"#{name}+#{Enum.at(@weights, index)}", put_elem(tuple, index, elem(tuple, index) * 2)}
   def mutant({name, tuple}, index, :half), do: {"#{name}-#{Enum.at(@weights, index)}", put_elem(tuple, index, div(elem(tuple, index), 2))}
   def mutant(school, index, :double), do: mutant(school, index)
+  def as_player({name, {:split, predicate, a, b}}), do: {name, {:split, predicate, weights(a), weights(b)}}
   def as_player({name, tuple}), do: {name, weights(tuple)}
+  @predicates [:last_turn, :behind, :first_turn]
+  def splits({_, _} = a, {_, bank} = b) do
+    hybrids = for predicate <- @predicates, {x, y} <- [{a, b}, {b, a}], do: {"#{elem(x, 0)}-if-#{predicate}-else-#{elem(y, 0)}", {:split, predicate, elem(x, 1), elem(y, 1)}}
+    hybrids ++ [{"banker-no-bank-last", {:split, :last_turn, put_elem(bank, 4, 0), bank}}]
+  end
+  def split_candidate(candidate, steady, held) do
+    name = elem(candidate, 0)
+    vs_steady = series(as_player(candidate), as_player(steady))
+    ties = Enum.count(vs_steady, fn {_, s} -> s == 1.0 end)
+    IO.puts("#{name}: #{wins(vs_steady)} of 8 seeds won against steady, #{total(vs_steady)} points, #{ties} ties")
+    entry = %{"candidate" => name, "against_steady" => row(vs_steady), "ties_with_steady" => ties, "frontier" => wins(vs_steady) in 1..4}
+    if wins(vs_steady) >= 5 do
+      vs_banker = series(as_player(candidate), as_player({"banker", @banker}))
+      kept = total(vs_banker) >= held and unproved(vs_banker) == 0 and unproved(vs_steady) == 0
+      IO.puts("#{name}: #{total(vs_banker)} points against banker (steady's #{held}); kept #{kept}")
+      Map.merge(entry, %{"against_banker" => row(vs_banker), "kept" => kept})
+    else
+      Map.put(entry, "kept", false)
+    end
+  end
+  def split_run do
+    File.mkdir_p!(Cu.results())
+    steady = {"steady", @steady}
+    banker = {"banker", @banker}
+    mirror = series(as_player(steady), {"steady-mirror", weights(@steady)})
+    idle = series({"idle", weights({0, 0, 0, 0, 0})}, as_player(steady))
+    lanes = %{"mirror_found" => Enum.count(mirror, fn {_, s} -> s == 1.0 end), "idle_found" => Enum.count(idle, fn {_, s} -> s != nil and s < 1 end)}
+    IO.puts("calibration: #{inspect(lanes)}")
+    summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.put(split_round(steady, banker), "lanes", lanes), else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    IO.puts(Cu.json(summary))
+  end
+  def split_round(steady, banker) do
+    base = series(as_player(banker), as_player(steady))
+    held = 16 - total(base)
+    IO.puts("baseline banker against steady: #{wins(base)} of 8 seeds won, #{total(base)} points of 16")
+    %{"baseline_banker_vs_steady" => row(base), "steady_points_against_banker" => held, "candidates" => Enum.map(splits(steady, banker), &split_candidate(&1, steady, held))}
+  end
   def row(scores), do: %{"wins" => wins(scores), "points" => total(scores), "unproved" => unproved(scores), "by_seed" => Map.new(scores, fn {k, v} -> {to_string(k), v} end)}
   def improve(school, other, parent_vs_other, moves \\ [:double]) do
     options = for move <- moves, index <- 0..4, elem(mutant(school, index, move), 1) != elem(school, 1), do: {index, move}
