@@ -266,3 +266,16 @@ The first run of iteration 5 ended in a crash (`docs/findings.md`, finding 4, ad
 `banker-if-first_turn-else-steady`, `banker-no-bank-last`) are run now by `tools/schools.exs split NAME...` with the
 protocol of iteration 5 unchanged, in `results/iteration-5-rest/`. Calibration is not run again: it was 8 of 8 in the first
 run, with the same code and the same GPU. The baseline is run again, as the reference for "kept".
+
+## Change of 2026-11-27: a direct solve driver (speed only)
+
+Profiling a solve (eBPF and a timer around each stage, now recorded in every trace as `stages`) found that 5 of its
+5.5 seconds were process start-up: the Turbo player starts three Elixir processes and runs the Lean kernel emitter
+twice only to write one input file. `tools/direct.exs` builds that file in the running process (byte-equal to the
+player's on a test board), runs the resident GPU host itself, and asks the planner once per solve (from a migrated
+database made once) instead of once per slice. The GPU gate never blocks in these runs (`--max-gpu 100`), so the
+planner's answer is the same. The search is unchanged: on four boards the bounds and values equal the player's
+(-40, -16, -43, -30), and the 8 hand-checked tests give the same node counts, in 35 s instead of 300 s. The VRChat
+check is cached for 15 seconds; the comparison with Turbo's own front end is opt-in (`CU_CHECK_FRONTEND=1`: it said
+"differs" on every solve of five iterations). `CU_DRIVER=player` brings back the old path. The results of the runs
+before this change stand; the two experiments running at the time are restarted on the new code.

@@ -182,7 +182,13 @@ defmodule Cu.Solve do
   def whole?(plan), do: Enum.all?([plan.retire, plan.summon, plan.slot, plan.target])
   def mzn(args), do: System.cmd(Path.join(Cu.minizinc(), "bin/minizinc"), args, env: [{"LD_LIBRARY_PATH", Path.join(Cu.minizinc(), "lib")}], stderr_to_stdout: true)
   @tasklist "/mnt/c/Windows/System32/tasklist.exe"
-  def vrchat?, do: File.exists?(@tasklist) and windows_vrchat?()
+  def vrchat? do
+    now = System.monotonic_time(:second)
+    case :persistent_term.get(:cu_vrchat, nil) do
+      {at, value} when now - at < 15 -> value
+      _ -> value = File.exists?(@tasklist) and windows_vrchat?(); :persistent_term.put(:cu_vrchat, {now, value}); value
+    end
+  end
   def windows_vrchat? do
     case System.cmd(@tasklist, ["/FI", "IMAGENAME eq VRChat.exe"], stderr_to_stdout: true) do
       {out, 0} -> String.contains?(out, "VRChat.exe")
@@ -194,20 +200,32 @@ defmodule Cu.Solve do
   def engine, do: "gpu"
   def duty, do: if(vrchat?(), do: System.get_env("CU_GPU_DUTY_VR", "10"), else: System.get_env("CU_GPU_DUTY", "50"))
   def engine_args("gpu", duty), do: ["--engine", "gpu", "--slice", "500", "--duty", duty, "--max-gpu", "100", "--blocks", System.get_env("CU_GPU_BLOCKS", "64")]
+  def timed(name, fun) do
+    {microseconds, result} = :timer.tc(fun)
+    Process.put(:stages, Map.put(Process.get(:stages, %{}), name, div(microseconds, 1000)))
+    result
+  end
   def turbo(model, dzn) do
+    Process.put(:stages, %{})
     dir = Cu.work()
     chosen = engine()
-    duty = duty()
+    duty = timed("vrchat_check", fn -> duty() end)
     scratch = Path.join([dir, "turbo_solve", "party"])
     [fzn, ozn, cp, ck] = for name <- ~w(x.fzn x.ozn party.cp ck.bin), do: Path.join(dir, name)
     for stale <- [ck, ck <> ".status", Path.join(scratch, "result.txt"), Path.join(scratch, "solution.mzn")], do: File.rm(stale)
-    {_, 0} = mzn(["--solver", "org.minizinc.mzn-fzn", "-c", "--fzn", fzn, "--ozn", ozn, model, dzn])
-    {dump, 0} = System.cmd(Path.join(Cu.frontier(), ".lake/build/bin/frontier_frontend"), ["--dump", fzn])
+    {_, 0} = timed("compile", fn -> mzn(["--solver", "org.minizinc.mzn-fzn", "-c", "--fzn", fzn, "--ozn", ozn, model, dzn]) end)
+    {dump, 0} = timed("dump", fn -> System.cmd(Path.join(Cu.frontier(), ".lake/build/bin/frontier_frontend"), ["--dump", fzn]) end)
     File.write!(cp, dump)
     env = [{"TMPDIR", dir}, {"ELIXIR_ERL_OPTIONS", "+fnu"}]
     args = ["600", "elixir", "tools/turbo_player.exs", cp, "--fzn", fzn, "--checkpoint", ck] ++ engine_args(chosen, duty)
-    {log, code} = System.cmd("timeout", args, cd: Cu.frontier(), env: env, stderr_to_stdout: true)
-    read(scratch, ozn, code, log) |> Map.put(:frontend_equal, frontend_equal?(fzn, dump)) |> Map.put(:engine, chosen) |> Map.put(:duty, duty) |> Map.put(:root, root?(dump))
+    {log, code} = timed("gpu", fn -> run_gpu(dump, fzn, scratch, dir, duty, args, env) end)
+    result = read(scratch, ozn, code, log)
+    equal = if System.get_env("CU_CHECK_FRONTEND") == "1", do: timed("oracle", fn -> frontend_equal?(fzn, dump) end)
+    result |> Map.put(:frontend_equal, equal) |> Map.put(:engine, chosen) |> Map.put(:duty, duty) |> Map.put(:root, root?(dump)) |> Map.put(:stages, Process.get(:stages))
+  end
+  def driver, do: System.get_env("CU_DRIVER", "direct")
+  def run_gpu(dump, fzn, scratch, dir, duty, args, env) do
+    if driver() == "direct", do: Cu.Direct.solve(dump, fzn, scratch, dir, duty), else: System.cmd("timeout", args, cd: Cu.frontier(), env: env, stderr_to_stdout: true)
   end
   def root?(dump), do: String.starts_with?(dump, "bot 0\nvariables 0\n")
   def frontend_equal?(fzn, dump) do
@@ -228,7 +246,7 @@ defmodule Cu.Solve do
       [_, done, all] -> done == all
       nil -> blocks != [] and Enum.all?(blocks, fn [_, _, _, e] -> e == "1" end)
     end
-    %{exhaustive: whole, bound: String.to_integer(approx), nodes: nodes, plan: plan(printed(ozn, Path.join(scratch, "solution.mzn")))}
+    %{exhaustive: whole, bound: String.to_integer(approx), nodes: nodes, plan: plan(timed("print_solution", fn -> printed(ozn, Path.join(scratch, "solution.mzn")) end))}
   end
 end
 
@@ -404,7 +422,7 @@ defmodule Cu.Match do
     board = board(me, sides[other], turn)
     w = pick(w, %{turn: turn, me: me, them: sides[other]})
     r = Cu.Run.solve(board, w)
-    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "weights" => Cu.Run.show(w), "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries],
+    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "weights" => Cu.Run.show(w), "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries], "stages" => r.turbo[:stages],
             "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
             "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
     File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])
@@ -633,3 +651,5 @@ defmodule Cu.Screen do
     %{"size" => length(members), "representative" => hd(vectors), "weightings" => vectors, "mean_outcome" => mean}
   end
 end
+
+Code.require_file("direct.exs", __DIR__)
