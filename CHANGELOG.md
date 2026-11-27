@@ -34,3 +34,30 @@ finding 2); no optimum disagreed.
 **Not measured.** Rungs 4 and 8; 3 or more units a side; the rules engine's verdict on any plan; more than one
 turn. One run, one draw of 8 boards a level.
 
+## Iteration 2 (2026-11-26): every rung tried (a change made after iteration 1)
+
+**Tried.** The same baseline, levels, seeds and lanes; each candidate at rungs 4 and 8. 208 solves, 407 to 13,745
+nodes a solve (median 4,685).
+
+**Calibration.** Both levels calibrated again: clone 8 of 8 and 8 of 8, dropped constraint 8 of 8 and 8 of 8. All
+176 player and clone solves proved; the 16 not proved are the dropped-constraint lane.
+
+**Result.** One school kept: `banker`, bank weight ×8, `(2, 2, 2, 2, 8)`.
+
+| Candidate | Rung 4 (`g2m1`, `g2m4`) | Rung 8 | Kept |
+|-----------|-------------------------|--------|------|
+| `striker`, `hunter`, `keeper`, `warden` | 0, 0 | 0, 0 | no |
+| `banker` | 8, 6 | 8, 7 | rung 8, a school |
+
+**How `banker` plays.** On 15 of 16 boards it ends the turn with 5 mana for next turn where `steady` ends with 1
+to 4, and pays for it with board: it keeps fewer levels of units on the field (for example 0 against 4 at `g2m1`
+seeds 4 and 5). Damage and kills are the same as `steady`'s on 13 of 16 boards. The one board where it does not
+differ (`g2m4` seed 1) is one where `steady` already banks 5.
+
+**Frontier success.** From 0 to 15 of 16 for `banker`; 0 for the rest. **Kept.** `steady` and `banker`.
+
+**Real artifact.** The Lean front end's dump differed from Turbo's own on 208 of 208 solves; no optimum disagreed.
+
+**Not measured.** Whether a school wins more: a school here only plays differently for one turn. 3 or more units a
+side; the engine's verdict; more than one turn.
+
