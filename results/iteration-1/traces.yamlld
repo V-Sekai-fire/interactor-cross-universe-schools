@@ -1,0 +1,9608 @@
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -40
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 1
+turbo_bound: -40
+turbo_exhaustive: true
+turbo_nodes: 4685
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -16
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 2
+turbo_bound: -16
+turbo_exhaustive: true
+turbo_nodes: 4783
+value: -16
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -32
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 3
+turbo_bound: -32
+turbo_exhaustive: true
+turbo_nodes: 5209
+value: -32
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -23
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 4
+turbo_bound: -23
+turbo_exhaustive: true
+turbo_nodes: 2877
+value: -23
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -21
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 5
+turbo_bound: -21
+turbo_exhaustive: true
+turbo_nodes: 2809
+value: -21
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -41
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 6
+turbo_bound: -41
+turbo_exhaustive: true
+turbo_nodes: 6127
+value: -41
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -14
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 7
+turbo_bound: -14
+turbo_exhaustive: true
+turbo_nodes: 3801
+value: -14
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -40
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 8
+turbo_bound: -40
+turbo_exhaustive: true
+turbo_nodes: 6223
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -43
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 1
+turbo_bound: -43
+turbo_exhaustive: true
+turbo_nodes: 5255
+value: -43
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -31
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 2
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 4891
+value: -31
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -30
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 3
+turbo_bound: -30
+turbo_exhaustive: true
+turbo_nodes: 9057
+value: -30
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -25
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 4
+turbo_bound: -25
+turbo_exhaustive: true
+turbo_nodes: 2941
+value: -25
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 5
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 7373
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -47
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 6
+turbo_bound: -47
+turbo_exhaustive: true
+turbo_nodes: 4151
+value: -47
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 7
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 5793
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: true
+seed: 8
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -80
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 1
+turbo_bound: -80
+turbo_exhaustive: true
+turbo_nodes: 4685
+value: -80
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -32
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 2
+turbo_bound: -32
+turbo_exhaustive: true
+turbo_nodes: 4783
+value: -32
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -64
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 3
+turbo_bound: -64
+turbo_exhaustive: true
+turbo_nodes: 5209
+value: -64
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -46
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 4
+turbo_bound: -46
+turbo_exhaustive: true
+turbo_nodes: 2877
+value: -46
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -42
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 5
+turbo_bound: -42
+turbo_exhaustive: true
+turbo_nodes: 2809
+value: -42
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -82
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 6
+turbo_bound: -82
+turbo_exhaustive: true
+turbo_nodes: 6127
+value: -82
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -28
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 7
+turbo_bound: -28
+turbo_exhaustive: true
+turbo_nodes: 3801
+value: -28
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -80
+frontend_equal: false
+lane: clone
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 8
+turbo_bound: -80
+turbo_exhaustive: true
+turbo_nodes: 6223
+value: -80
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -40
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 1
+turbo_bound: -42
+turbo_exhaustive: true
+turbo_nodes: 4693
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -16
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 2
+turbo_bound: -20
+turbo_exhaustive: true
+turbo_nodes: 4785
+value: -16
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -32
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 3
+turbo_bound: -42
+turbo_exhaustive: true
+turbo_nodes: 5211
+value: -32
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -23
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 4
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 2881
+value: -23
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -21
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 5
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 2813
+value: -21
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -41
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 6
+turbo_bound: -47
+turbo_exhaustive: true
+turbo_nodes: 6131
+value: -41
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -14
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 7
+turbo_bound: -20
+turbo_exhaustive: true
+turbo_nodes: 3803
+value: -14
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -40
+frontend_equal: false
+lane: dropped
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 8
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 6225
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -86
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 1
+turbo_bound: -86
+turbo_exhaustive: true
+turbo_nodes: 5255
+value: -86
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -62
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 2
+turbo_bound: -62
+turbo_exhaustive: true
+turbo_nodes: 4891
+value: -62
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -60
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 3
+turbo_bound: -60
+turbo_exhaustive: true
+turbo_nodes: 9057
+value: -60
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -50
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 4
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 2941
+value: -50
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -44
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 5
+turbo_bound: -44
+turbo_exhaustive: true
+turbo_nodes: 7373
+value: -44
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -94
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 6
+turbo_bound: -94
+turbo_exhaustive: true
+turbo_nodes: 4151
+value: -94
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -44
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 7
+turbo_bound: -44
+turbo_exhaustive: true
+turbo_nodes: 5793
+value: -44
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -36
+frontend_equal: false
+lane: clone
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: clone
+proved: true
+seed: 8
+turbo_bound: -36
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -36
+weights:
+  bank: 2
+  board: 4
+  damage: 4
+  kill: 4
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -43
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 1
+turbo_bound: -49
+turbo_exhaustive: true
+turbo_nodes: 5259
+value: -43
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -31
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 2
+turbo_bound: -41
+turbo_exhaustive: true
+turbo_nodes: 4895
+value: -31
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -30
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 3
+turbo_bound: -36
+turbo_exhaustive: true
+turbo_nodes: 9059
+value: -30
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -25
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 4
+turbo_bound: -33
+turbo_exhaustive: true
+turbo_nodes: 2945
+value: -25
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -22
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 5
+turbo_bound: -26
+turbo_exhaustive: true
+turbo_nodes: 7375
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -47
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 6
+turbo_bound: -49
+turbo_exhaustive: true
+turbo_nodes: 4159
+value: -47
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -22
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 7
+turbo_bound: -26
+turbo_exhaustive: true
+turbo_nodes: 5795
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -18
+frontend_equal: false
+lane: dropped
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: steady
+proved: false
+seed: 8
+turbo_bound: -24
+turbo_exhaustive: true
+turbo_nodes: 2743
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -44
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 1
+turbo_bound: -44
+turbo_exhaustive: true
+turbo_nodes: 4789
+value: -44
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -16
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 2
+turbo_bound: -16
+turbo_exhaustive: true
+turbo_nodes: 4783
+value: -16
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -32
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 3
+turbo_bound: -32
+turbo_exhaustive: true
+turbo_nodes: 5305
+value: -32
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -23
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 4
+turbo_bound: -23
+turbo_exhaustive: true
+turbo_nodes: 3041
+value: -23
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -21
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 5
+turbo_bound: -21
+turbo_exhaustive: true
+turbo_nodes: 2969
+value: -21
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -47
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 6
+turbo_bound: -47
+turbo_exhaustive: true
+turbo_nodes: 7205
+value: -47
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -14
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 7
+turbo_bound: -14
+turbo_exhaustive: true
+turbo_nodes: 3801
+value: -14
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -40
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 8
+turbo_bound: -40
+turbo_exhaustive: true
+turbo_nodes: 7565
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -49
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 1
+turbo_bound: -49
+turbo_exhaustive: true
+turbo_nodes: 6451
+value: -49
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -31
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 2
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 5061
+value: -31
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -30
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 3
+turbo_bound: -30
+turbo_exhaustive: true
+turbo_nodes: 9097
+value: -30
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -25
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 4
+turbo_bound: -25
+turbo_exhaustive: true
+turbo_nodes: 2941
+value: -25
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 5
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 7373
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -53
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 6
+turbo_bound: -53
+turbo_exhaustive: true
+turbo_nodes: 5317
+value: -53
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 7
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 5801
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: striker
+proved: true
+seed: 8
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 4
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -56
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 1
+turbo_bound: -56
+turbo_exhaustive: true
+turbo_nodes: 4379
+value: -56
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 2
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 4971
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -42
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 3
+turbo_bound: -42
+turbo_exhaustive: true
+turbo_nodes: 6823
+value: -42
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -37
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 4
+turbo_bound: -37
+turbo_exhaustive: true
+turbo_nodes: 3437
+value: -37
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -33
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 5
+turbo_bound: -33
+turbo_exhaustive: true
+turbo_nodes: 3629
+value: -33
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -53
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 6
+turbo_bound: -53
+turbo_exhaustive: true
+turbo_nodes: 6067
+value: -53
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 7
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 3801
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -50
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 8
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 6029
+value: -50
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -55
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 1
+turbo_bound: -55
+turbo_exhaustive: true
+turbo_nodes: 5195
+value: -55
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -47
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 2
+turbo_bound: -47
+turbo_exhaustive: true
+turbo_nodes: 4923
+value: -47
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -36
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 3
+turbo_bound: -36
+turbo_exhaustive: true
+turbo_nodes: 12637
+value: -36
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -35
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 4
+turbo_bound: -35
+turbo_exhaustive: true
+turbo_nodes: 2941
+value: -35
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -24
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 5
+turbo_bound: -24
+turbo_exhaustive: true
+turbo_nodes: 8511
+value: -24
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -63
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 6
+turbo_bound: -63
+turbo_exhaustive: true
+turbo_nodes: 3963
+value: -63
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -24
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 7
+turbo_bound: -24
+turbo_exhaustive: true
+turbo_nodes: 6149
+value: -24
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: hunter
+proved: true
+seed: 8
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 4
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -58
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 1
+turbo_bound: -58
+turbo_exhaustive: true
+turbo_nodes: 2835
+value: -58
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -26
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 2
+turbo_bound: -26
+turbo_exhaustive: true
+turbo_nodes: 4679
+value: -26
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -50
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 3
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 3957
+value: -50
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -31
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 4
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 2249
+value: -31
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -29
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 5
+turbo_bound: -29
+turbo_exhaustive: true
+turbo_nodes: 2203
+value: -29
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -61
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 6
+turbo_bound: -61
+turbo_exhaustive: true
+turbo_nodes: 3935
+value: -61
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 7
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 3409
+value: -22
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -66
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 8
+turbo_bound: -66
+turbo_exhaustive: true
+turbo_nodes: 4011
+value: -66
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -63
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 1
+turbo_bound: -63
+turbo_exhaustive: true
+turbo_nodes: 3197
+value: -63
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -45
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 2
+turbo_bound: -45
+turbo_exhaustive: true
+turbo_nodes: 3807
+value: -45
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -50
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 3
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 5633
+value: -50
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -37
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 4
+turbo_bound: -37
+turbo_exhaustive: true
+turbo_nodes: 2805
+value: -37
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -38
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 5
+turbo_bound: -38
+turbo_exhaustive: true
+turbo_nodes: 5727
+value: -38
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -69
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 6
+turbo_bound: -69
+turbo_exhaustive: true
+turbo_nodes: 2129
+value: -69
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -38
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 7
+turbo_bound: -38
+turbo_exhaustive: true
+turbo_nodes: 5125
+value: -38
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -34
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: keeper
+proved: true
+seed: 8
+turbo_bound: -34
+turbo_exhaustive: true
+turbo_nodes: 525
+value: -34
+weights:
+  bank: 1
+  board: 4
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -40
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 1
+turbo_bound: -40
+turbo_exhaustive: true
+turbo_nodes: 4685
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -16
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 2
+turbo_bound: -16
+turbo_exhaustive: true
+turbo_nodes: 4555
+value: -16
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -32
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 3
+turbo_bound: -32
+turbo_exhaustive: true
+turbo_nodes: 5081
+value: -32
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -23
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 4
+turbo_bound: -23
+turbo_exhaustive: true
+turbo_nodes: 2717
+value: -23
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -21
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 5
+turbo_bound: -21
+turbo_exhaustive: true
+turbo_nodes: 2703
+value: -21
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -41
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 6
+turbo_bound: -41
+turbo_exhaustive: true
+turbo_nodes: 6127
+value: -41
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -14
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 7
+turbo_bound: -14
+turbo_exhaustive: true
+turbo_nodes: 3801
+value: -14
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -40
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 8
+turbo_bound: -40
+turbo_exhaustive: true
+turbo_nodes: 6085
+value: -40
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -43
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 1
+turbo_bound: -43
+turbo_exhaustive: true
+turbo_nodes: 5255
+value: -43
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -31
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 2
+turbo_bound: -31
+turbo_exhaustive: true
+turbo_nodes: 4635
+value: -31
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -30
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 3
+turbo_bound: -30
+turbo_exhaustive: true
+turbo_nodes: 7257
+value: -30
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -25
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 4
+turbo_bound: -25
+turbo_exhaustive: true
+turbo_nodes: 2941
+value: -25
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 5
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 7023
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -47
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 6
+turbo_bound: -47
+turbo_exhaustive: true
+turbo_nodes: 4151
+value: -47
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 3
+      target: 2
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 7
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 5769
+value: -22
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -18
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 2
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: warden
+proved: true
+seed: 8
+turbo_bound: -18
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -18
+weights:
+  bank: 1
+  board: 2
+  damage: 2
+  kill: 2
+  life: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -42
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 2
+      hurt: 0
+      kind: attack
+      power: 3
+      target: 1
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 1
+turbo_bound: -42
+turbo_exhaustive: true
+turbo_nodes: 5407
+value: -42
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -20
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 2
+turbo_bound: -20
+turbo_exhaustive: true
+turbo_nodes: 4781
+value: -20
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00043
+    - CUU00237
+    - CUU00294
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00034
+    - CUU00046
+chuffed_objective: -36
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 7
+      target: 2
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 3
+turbo_bound: -36
+turbo_exhaustive: true
+turbo_nodes: 5209
+value: -36
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00034
+    - CUU00074
+  theirs:
+    - CUU00217
+    - CUU00035
+    - CUU00294
+chuffed_objective: -24
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 4
+turbo_bound: -24
+turbo_exhaustive: true
+turbo_nodes: 3171
+value: -24
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -22
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 5
+turbo_bound: -22
+turbo_exhaustive: true
+turbo_nodes: 3077
+value: -22
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -44
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 3
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 6
+turbo_bound: -44
+turbo_exhaustive: true
+turbo_nodes: 6191
+value: -44
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00046
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00043
+  theirs:
+    - CUU00045
+    - CUU00046
+    - CUU00043
+chuffed_objective: -16
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 2
+  board: 4
+  damage: 0
+  kills: 2
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 2
+      target: 3
+      units:
+        - 2
+    - kind: summon
+      mana: 0
+      unit: 4
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 7
+turbo_bound: -16
+turbo_exhaustive: true
+turbo_nodes: 7619
+value: -16
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 1
+  mine:
+    - CUU00074
+    - CUU00034
+    - CUU00035
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00034
+    - CUU00294
+    - CUU00045
+chuffed_objective: -44
+frontend_equal: false
+lane: player
+level: g2m1
+outcome:
+  bank: 4
+  board: 13
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 5
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 8
+      target: 3
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 1
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 8
+turbo_bound: -44
+turbo_exhaustive: true
+turbo_nodes: 6223
+value: -44
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00294
+    - CUU00237
+    - CUU00045
+    - CUU00074
+    - CUU00074
+  theirs:
+    - CUU00046
+    - CUU00233
+    - CUU00043
+chuffed_objective: -48
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+  steps:
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 3
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      kind: attack
+      power: 7
+      target: 1
+      units:
+        - 2
+    - kind: summon
+      mana: 3
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 3
+    - 2
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 1
+turbo_bound: -48
+turbo_exhaustive: true
+turbo_nodes: 5255
+value: -48
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00294
+    - CUU00074
+    - CUU00074
+    - CUU00034
+  theirs:
+    - CUU00034
+    - CUU00237
+    - CUU00294
+chuffed_objective: -32
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: retire
+      mana: 5
+      units:
+        - 3
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 1
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 2
+  summon: 5
+  target:
+    - 2
+    - 3
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 2
+turbo_bound: -32
+turbo_exhaustive: true
+turbo_nodes: 5005
+value: -32
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00046
+    - CUU00046
+    - CUU00233
+  theirs:
+    - CUU00045
+    - CUU00045
+    - CUU00045
+chuffed_objective: -34
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 6
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 3
+turbo_bound: -34
+turbo_exhaustive: true
+turbo_nodes: 9057
+value: -34
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00233
+    - CUU00046
+    - CUU00074
+    - CUU00043
+    - CUU00043
+  theirs:
+    - CUU00217
+    - CUU00139
+    - CUU00034
+chuffed_objective: -28
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+  steps:
+    - destroyed: 3
+      kind: attack
+      power: 6
+      target: 3
+      units:
+        - 1
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 4
+turbo_bound: -28
+turbo_exhaustive: true
+turbo_nodes: 4399
+value: -28
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00074
+    - CUU00046
+    - CUU00074
+    - CUU00217
+    - CUU00043
+  theirs:
+    - CUU00043
+    - CUU00237
+    - CUU00074
+chuffed_objective: -26
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 4
+  board: 8
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 0
+      unit: 4
+    - destroyed: 3
+      kind: attack
+      power: 4
+      target: 3
+      units:
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+  summon: 4
+  target:
+    - 3
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 5
+turbo_bound: -26
+turbo_exhaustive: true
+turbo_nodes: 7373
+value: -26
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00045
+    - CUU00046
+    - CUU00034
+    - CUU00046
+    - CUU00074
+  theirs:
+    - CUU00074
+    - CUU00233
+    - CUU00217
+chuffed_objective: -50
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 11
+  damage: 3
+  kills: 8
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 1
+      unit: 4
+    - destroyed: 2
+      kind: attack
+      power: 1
+      target: 2
+      units:
+        - 2
+    - destroyed: 3
+      kind: attack
+      power: 5
+      target: 3
+      units:
+        - 3
+    - damage: 3
+      hurt: 0
+      kind: attack
+      power: 4
+      target: 1
+      units:
+        - 1
+        - 4
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 3
+    - 1
+    - 2
+    - 3
+    - 0
+  summon: 4
+  target:
+    - 2
+    - 3
+    - 1
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 6
+turbo_bound: -50
+turbo_exhaustive: true
+turbo_nodes: 4939
+value: -50
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00043
+    - CUU00046
+    - CUU00294
+    - CUU00045
+    - CUU00294
+  theirs:
+    - CUU00294
+    - CUU00074
+    - CUU00035
+chuffed_objective: -26
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 1
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 2
+      unit: 5
+    - destroyed: 2
+      kind: attack
+      power: 2
+      target: 2
+      units:
+        - 5
+plan:
+  early: true
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+  summon: 5
+  target:
+    - 2
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 7
+turbo_bound: -26
+turbo_exhaustive: true
+turbo_nodes: 5791
+value: -26
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+board:
+  field: 2
+  mana: 4
+  mine:
+    - CUU00217
+    - CUU00043
+    - CUU00045
+    - CUU00046
+    - CUU00294
+  theirs:
+    - CUU00046
+    - CUU00139
+    - CUU00139
+chuffed_objective: -20
+frontend_equal: false
+lane: player
+level: g2m4
+outcome:
+  bank: 3
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+  steps:
+    - kind: summon
+      mana: 2
+      unit: 5
+plan:
+  early: false
+  retire:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  slot:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  summon: 5
+  target:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+player: banker
+proved: true
+seed: 8
+turbo_bound: -20
+turbo_exhaustive: true
+turbo_nodes: 2741
+value: -20
+weights:
+  bank: 2
+  board: 2
+  damage: 2
+  kill: 2
+  life: 2
