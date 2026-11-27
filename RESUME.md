@@ -9,7 +9,10 @@ repository exists yet (the name `V-Sekai-fire/interactor-cross-universe-schools`
 
 ## Handover to Hermes (2026-11-27, owner: "transfer to hermes a2a")
 
-The Claude session that built this hands it to the Hermes agent over A2A. Its monitors die with it; the runs do not.
+The Claude session that built this tried to hand it to the Hermes agent over A2A (2026-11-27). Hermes answered the read-only
+check correctly and then declined the go-ahead, because an A2A message cannot carry the owner's approval: it wants the owner
+to confirm in its own chat, or in a file on the drive. **Until the owner does, the Claude session owns the repository.**
+Its monitors die with it; the runs do not.
 
 **What runs now** (systemd user units, GPU only, slow while VRChat runs): check with
 `systemctl --user show cross-universe-schools-split cross-universe-schools-screen cross-universe-schools-styles -p ActiveState`;
