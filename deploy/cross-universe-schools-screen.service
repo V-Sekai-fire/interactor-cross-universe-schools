@@ -1,0 +1,23 @@
+# SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
+# SPDX-License-Identifier: MIT
+[Unit]
+Description=Cross Universe schools of play style: broad one-turn screen of many weightings, iteration 6 (oneshot, Turbo on the GPU, 25 percent duty)
+
+[Service]
+Type=oneshot
+WorkingDirectory=/mnt/fire/3-interactor/interactor-cross-universe-schools
+Environment=PATH=/home/fire/.pixi/bin:/usr/local/bin:/usr/bin:/bin
+Environment=ELIXIR_ERL_OPTIONS=+fnu
+Environment=CU_WORK=/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/screen
+Environment=CU_GPU_DUTY=25
+Environment=CU_RESULTS=/mnt/fire/3-interactor/interactor-cross-universe-schools/results/iteration-6
+Nice=19
+CPUWeight=10
+CPUQuota=100%
+IOSchedulingClass=idle
+MemoryHigh=3G
+MemoryMax=4G
+ExecCondition=/bin/sh -c 'test "$(cut -d. -f1 /proc/loadavg)" -lt 4'
+ExecStart=/home/fire/.pixi/bin/elixir tools/schools.exs screen
+StandardOutput=append:/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/screen.log
+StandardError=append:/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/screen.log
