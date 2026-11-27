@@ -156,6 +156,21 @@ and 2 drew no winnable board and gave every unit a right, so their results stand
   doubling as the mutation, one round.
 - **Not measured**: longer matches, any lookahead past one turn, a hand over 3 cards, play in the rules engine.
 
+## Iteration 4: the schools improve themselves
+
+Asked for by the owner (2026-11-26, "please self improve") while iteration 3 ran; written before iteration 4 runs.
+Everything in iteration 3 stands, with these changes:
+
+- **Start** from the two schools iteration 3 ends with (`schools_after` in its summary).
+- **Moves**: each weight doubled, then each weight halved (rounded down), in the order damage, kill, board, life,
+  bank. A move that leaves the weights unchanged is skipped. Iteration 3 could only double, so a weight could rise
+  and never come back.
+- **Rounds repeat**: each round starts with a new baseline between the current two schools, then tries the moves for
+  each school as in iteration 3. The loop stops after a round that changes neither school, or after 3 rounds.
+- **Calibration** (mirror and idle, against the first school) runs once at the start; the rounds run only if both
+  lanes are 8 of 8.
+- **Chosen by the agent**: halving as the second move, the order, the limit of 3 rounds.
+
 ## Ruling of 2026-11-27: slow progress while VRChat runs
 
 The owner, with VRChat open: "slowly progress". From then on a solve does not wait for VRChat to close; it runs on
