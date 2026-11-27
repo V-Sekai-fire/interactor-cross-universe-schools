@@ -177,4 +177,4 @@ The owner, with VRChat open: "slowly progress". From then on a solve does not wa
 the GPU at a 10 percent duty (`CU_GPU_DUTY_VR`; a launch is 10 percent of a 64 Hz frame) while VRChat runs, and at
 50 percent otherwise (`CU_GPU_DUTY`). The duty of each turn is in `turns.jsonl`. The duty changes only how fast a
 solve runs: every rule above, and what counts as proved, stays. The CPU profile is BCC's `profile-bpfcc` (folded
-stacks, `deploy/ebpf/cross-universe-schools-profile.service`), beside the bpftrace process timing.
+stacks, `deploy/ebpf/cross-universe-schools-profile@.service`, one instance per run unit), beside the bpftrace process timing.
