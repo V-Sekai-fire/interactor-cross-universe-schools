@@ -186,3 +186,40 @@ was 7 of 8 and the round did not run. From then on a player solve whose plan the
 solved again, up to three tries in all, with the 64 GPU blocks as before; the number of tries is in the trace. The
 planted dropped-constraint lane gets no retries. This is a post-hoc change: it was made knowing that result.
 
+## Iteration 5: splitting the schools
+
+Asked for by the owner (2026-11-27): "if you can't figure out a new school, try splitting existing schools." Written
+before iteration 5 runs, while iteration 4 was still on its first round (its halving moves had all tied).
+
+**What a split is.** A school becomes a policy that picks one of two weightings at the start of each of its turns by
+a predicate of the situation. The existing schools are the material: `steady` and `banker`, and nothing else.
+
+- Predicates, chosen by the agent: `last_turn` (no later turn of mine in the match: turn 5 for seat 1, turn 6 for
+  seat 2), `behind` (my life is under theirs at the start of my turn), `first_turn` (my first turn: turn 1 or 2).
+- Candidates, 7: for each predicate, `steady` when it holds and `banker` otherwise, and the reverse (6), and
+  `banker-no-bank-last`, `banker` with the bank weight 0 on its last turn (the one split that changes one weight of
+  its own parent).
+- Each turn's trace records the weights picked (`weights`).
+
+**Why these.** Seen in iteration 3's traces before this page was committed: `banker` banks 4.8 mana on its last
+turn, for a turn that does not exist, and keeps 2.5 levels on the field against `steady`'s 5.2; it deals 0.2 damage
+a turn against 1.7. As the first player it lost all 8 seeds; as the second player it won 3, drew 2 and lost 3. The
+`last_turn` and `first_turn` predicates test the first and the third of these; `behind` is the usual one.
+
+**Run.** Calibration as in iteration 3 (mirror and idle against `steady`, 8 of 8 or no round). Then the baseline
+`banker` against `steady`, and each candidate against `steady`, 8 seeds, two matches a seed. A candidate that wins
+5 or more of the 8 seeds against `steady` also faces `banker`.
+
+- **Kept as a school**: 5 or more seeds won against `steady`, and at least as many points against `banker` as
+  `steady` scored against `banker` in the baseline, and every solve proved.
+- **Frontier**: 1 to 4 seeds won against `steady`. Reported with its counts; not kept.
+- **Ties**: seeds scored exactly 1 of 2 against `steady` are counted as `ties_with_steady`; a candidate that ties on
+  all 8 plays like `steady`, and is not a school.
+- Success, proved, retries and calibration are as in iterations 3 and 4. Winner rule: none between schools.
+
+**Chosen by the agent**: the predicates, the 7 candidates, `steady` as the one opponent for screening, the 5-of-8
+threshold, one level of splitting (no split of a split).
+
+**Not measured**: splits by anything but these three predicates, splits of more than two weightings, a school that
+also changes weights between its own turns by a counter, play against a person.
+

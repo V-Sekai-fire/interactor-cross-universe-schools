@@ -125,3 +125,26 @@ matches are repeatable.
 
 **Not measured.** The ten moves of `banker`, `steady-bank`, rounds 2 and 3.
 
+
+## Iteration 5 (2026-11-27): splitting the schools, first run
+
+**Tried.** Calibration, the baseline and the seven split candidates of `docs/protocol.md`, GPU only. The run ended in a
+crash (`docs/findings.md`, finding 4, addendum) after calibration, the baseline, four candidates, and six seeds of the
+fifth. Its traces are in `results/iteration-5/`. The last three candidates are run again on the faster driver.
+
+**Calibration.** Mirror 8 of 8, idle 8 of 8. **Baseline.** `banker` against `steady`: 0 of 8 seeds won, 4 of 16 points.
+
+| Candidate | Seeds won against `steady` | Points of 16 | Ties |
+|-----------|----------------------------|--------------|------|
+| `steady-if-last_turn-else-banker` | 0 | 6.0 | 6 |
+| `banker-if-last_turn-else-steady` | 0 | 7.0 | 6 |
+| `steady-if-behind-else-banker` | 1 | 6.0 | 4 |
+| `banker-if-behind-else-steady` | 0 | 8.0 | 8 |
+
+**Kept.** Nothing. **Frontier.** `steady-if-behind-else-banker` won one seed (seed 8: a win and a draw) and lost two.
+
+**Reading.** Playing `steady` on its last turn lifts `banker` from 4 to 6 or 7 points. `banker-if-behind-else-steady` ties
+`steady` on all 8 seeds: switching when behind never changed its play in these matches.
+
+**Not measured.** `steady-if-first_turn-else-banker` (six of its eight seeds were played), `banker-if-first_turn-else-steady`
+and `banker-no-bank-last`: run again.
