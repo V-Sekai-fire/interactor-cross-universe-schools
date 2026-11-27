@@ -124,3 +124,30 @@ turns, all proved, one retry (it succeeded). No `summary.json`: the run did not 
 matches are repeatable.
 
 **Not measured.** The ten moves of `banker`, `steady-bank`, rounds 2 and 3.
+
+## Iteration 6 (2026-11-27): a broad screen of 66 weightings (`6078bb6`)
+
+**Tried.** 66 weightings (five weights each from 0, 1, 2, 4, 8, 16 at random, the five one-weight-at-16 corners,
+`steady`, `banker`; scaled copies removed) on 8 one-turn boards (`g2m1` and `g2m4`, seeds 1 to 4). 528 solves,
+Turbo on the GPU at 25 percent duty, all proved, none needed a retry. Not a match: it measures how weightings play,
+not whether they win.
+
+**Result.** **14 distinct styles** (weightings with the same plays on all 8 boards). Sizes 23, 8, 6, 5, 4, 4, 3, 3,
+2, 2, 2, 2, 1, 1. The 23-weighting style contains `steady`; the 4-weighting style `(1, 1, 1, 1, 4)` contains
+`banker`. Over the 8 boards the styles differ along four axes:
+
+| Axis | Values seen (mean per board) | Styles |
+|------|------------------------------|--------|
+| attack | damage 0.63 or 0.0 | 4, 9, 13, 14 deal none |
+| kills | 5.4, 5.1, 1.75, 0.0 | 3 and 5 kill about a third; 9 kills nothing |
+| bank | 3.0 to 3.5, or 4.6 to 5.0 | 5 to 8 and 10 to 14 bank; the rest do not |
+| board kept | 7.5, 5.1 to 5.9, 7.0 | the banking styles keep fewer levels |
+
+`life_lost` is 0.0 on every board and style: the one-turn boards give the opponent no reply. Representatives and
+mean outcomes of each style are in `results/iteration-6/summary.json`.
+
+**Reading.** The neighbourhood of `steady` (iterations 1 to 5) is one style out of 14, which is why nudging one
+weight there changed nothing: 23 of 66 weightings play like `steady`. The other 13 are untried in matches.
+
+**Not measured.** Which style wins matches (iteration 7, queued: each style's representative against `steady`);
+boards with 3 or more units; weights above 16.
