@@ -66,4 +66,4 @@ side; the engine's verdict; more than one turn.
 Started from `900c6e1` on the GPU. Halted by the owner after the mirror lane (8 of 8 seeds scored exactly 1 of 2)
 and 2 seeds of the idle lane (idle scored 0 on both). 122 turns, all proved on the GPU, none solved at the root.
 No baseline, no improvement round, so nothing is kept or changed; the partial traces and the eBPF profile are in
-`results/iteration-3/`. Resume from `RESUME.md`.
+`results/iteration-3-halted-20261126/`. Resume from `RESUME.md`.
