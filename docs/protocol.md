@@ -244,3 +244,16 @@ plays on every board of the screen. A school, here, is such a class of weighting
 - **GPU duty** 25 percent (10 while VRChat runs), beside iteration 5, which has its own work folder.
 - **Chosen by the agent**: the value set, the random draw, the 8 boards, equality of the signature as "same style".
 - **Not measured**: boards with 3 or more units, hands of more than 3 cards, weights above 16, any match.
+
+## Iteration 7: the styles face off
+
+Written before iteration 7 runs, and before iteration 6 (the broad screen) had finished.
+
+Each style that iteration 6 finds, apart from the one `steady` belongs to, is played by its representative weighting
+(the member with the smallest weights, `representative` in `results/iteration-6/summary.json`), at most the 12 largest
+styles. Calibration as in iterations 3 to 5 (mirror and idle against `steady`, 8 of 8 or no round). Each representative
+faces `steady` on seeds 1 to 8, two matches a seed, as in iteration 5. A style is **kept as a school** when its
+representative wins 5 or more of the 8 seeds and every solve is proved; seeds scored exactly 1 of 2 are counted as
+ties. **Chosen by the agent**: the representative, the cap of 12, `steady` as the opponent. **Not measured**: the
+other members of a style (they play the same on the 8 screen boards, not necessarily elsewhere), play between the
+new styles, play against a person.

@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
 # SPDX-License-Identifier: MIT
-# schools.exs  cards | check | one G MANA SEED | run | faceoff | iterate | split | screen [N]
+# schools.exs  cards | check | one G MANA SEED | run | faceoff | iterate | split | screen [N] | styles
 Code.require_file("cu.exs", __DIR__)
 
 defmodule Cu.Cli do
@@ -53,8 +53,9 @@ defmodule Cu.Cli do
   def main(["faceoff" | _]), do: Cu.Faceoff.run()
   def main(["iterate" | _]), do: Cu.Faceoff.iterate()
   def main(["split" | _]), do: Cu.Faceoff.split_run()
+  def main(["styles" | _]), do: Cu.Faceoff.styles_run()
   def main(["screen" | rest]), do: Cu.Screen.run(String.to_integer(List.first(rest) || "60"))
-  def main(_), do: IO.puts("usage: schools.exs cards | check | one G MANA SEED | run | faceoff | iterate | split | screen [N]")
+  def main(_), do: IO.puts("usage: schools.exs cards | check | one G MANA SEED | run | faceoff | iterate | split | screen [N] | styles")
 end
 
 Cu.Cli.main(System.argv())

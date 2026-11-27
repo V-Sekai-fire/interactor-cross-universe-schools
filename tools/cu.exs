@@ -484,6 +484,31 @@ defmodule Cu.Faceoff do
     File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
     IO.puts(Cu.json(summary))
   end
+  def lanes(steady) do
+    mirror = series(as_player(steady), {"steady-mirror", weights(@steady)})
+    idle = series({"idle", weights({0, 0, 0, 0, 0})}, as_player(steady))
+    %{"mirror_found" => Enum.count(mirror, fn {_, s} -> s == 1.0 end), "idle_found" => Enum.count(idle, fn {_, s} -> s != nil and s < 1 end)}
+  end
+  def styles_run(limit \\ 12) do
+    File.mkdir_p!(Cu.results())
+    steady = {"steady", @steady}
+    lanes = lanes(steady)
+    IO.puts("calibration: #{inspect(lanes)}")
+    summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: %{"lanes" => lanes, "styles" => style_entries(limit, steady)}, else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    IO.puts(Cu.json(summary))
+  end
+  def style_entries(limit, steady) do
+    styles = Path.join(Path.dirname(Cu.results()), "iteration-6/summary.json") |> File.read!() |> :json.decode() |> Map.fetch!("styles")
+    others = Enum.reject(styles, fn style -> Enum.any?(style["weightings"], &(&1 == Tuple.to_list(@steady))) end) |> Enum.take(limit)
+    for {style, index} <- Enum.with_index(others, 1) do
+      vector = List.to_tuple(style["representative"])
+      against = series({"style#{index}", weights(vector)}, as_player(steady))
+      ties = Enum.count(against, fn {_, s} -> s == 1.0 end)
+      IO.puts("style#{index} #{inspect(vector)}: #{wins(against)} of 8 seeds won against steady, #{total(against)} points, #{ties} ties")
+      %{"style" => index, "representative" => style["representative"], "members" => style["size"], "mean_outcome" => style["mean_outcome"], "against_steady" => row(against), "ties_with_steady" => ties, "kept" => wins(against) >= 5 and unproved(against) == 0}
+    end
+  end
   def split_round(steady, banker) do
     base = series(as_player(banker), as_player(steady))
     held = 16 - total(base)
