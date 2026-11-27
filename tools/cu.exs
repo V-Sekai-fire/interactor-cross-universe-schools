@@ -442,14 +442,49 @@ defmodule Cu.Match do
   def points(%{result: :unproved}, _seat), do: nil
   def points(%{result: seat}, seat), do: 1.0
   def points(_, _), do: 0.0
+  @cache_version 1
+  @fresh ~w(steady-mirror idle clone)
+  def school_key({:split, predicate, a, b}), do: %{"split" => to_string(predicate), "when" => Cu.Run.show(a), "else" => Cu.Run.show(b)}
+  def school_key(weights), do: Cu.Run.show(weights)
+  def model_tag, do: "#{@cache_version}-" <> binary_part(Base.encode16(:crypto.hash(:sha256, File.read!(Cu.model())), case: :lower), 0, 12)
+  def cache_key(a, b, seed), do: %{"a" => school_key(elem(a, 1)), "b" => school_key(elem(b, 1)), "seed" => seed, "model" => model_tag()}
+  def cache do
+    case :persistent_term.get({__MODULE__, :cache}, nil) do
+      nil -> table = load_cache(); :persistent_term.put({__MODULE__, :cache}, table); table
+      table -> table
+    end
+  end
+  def load_cache do
+    Path.join(Path.dirname(Cu.results()), "*/faceoffs.jsonl")
+    |> Path.wildcard()
+    |> Enum.flat_map(&Enum.to_list(File.stream!(&1)))
+    |> Enum.map(&:json.decode/1)
+    |> Enum.filter(&(is_map(&1["key"]) and is_float(&1["score_a"])))
+    |> Map.new(&{&1["key"], &1})
+  end
+  def remember(row), do: :persistent_term.put({__MODULE__, :cache}, Map.put(cache(), row["key"], row))
+  def fresh?(a, b), do: a in @fresh or b in @fresh
   def faceoff({a, wa}, {b, wb}, seed) do
+    key = cache_key({a, wa}, {b, wb}, seed)
+    case if(fresh?(a, b), do: nil, else: Map.get(cache(), key)) do
+      nil -> play_faceoff({a, wa}, {b, wb}, seed, key)
+      row -> reuse(row, a, b, seed)
+    end
+  end
+  def reuse(row, a, b, seed) do
+    File.write!(Path.join(Cu.results(), "faceoffs.jsonl"), Cu.json(Map.merge(row, %{"a" => a, "b" => b, "cached" => true})) <> "\n", [:append])
+    IO.puts("  #{a} vs #{b} seed #{seed}: #{inspect(row["score_a"])} (cached)")
+    row["score_a"]
+  end
+  def play_faceoff({a, wa}, {b, wb}, seed, key) do
     first = play(deal(seed), %{1 => {a, wa}, 2 => {b, wb}}, "#{a}-#{b}-#{seed}-a")
     second = play(deal(seed), %{1 => {b, wb}, 2 => {a, wa}}, "#{a}-#{b}-#{seed}-b")
     pa = [points(first, 1), points(second, 2)]
     score = if Enum.any?(pa, &is_nil/1), do: nil, else: Enum.sum(pa)
-    row = %{"a" => a, "b" => b, "seed" => seed, "score_a" => score, "first" => %{"result" => to_string(first.result), "reason" => first.reason},
+    row = %{"a" => a, "b" => b, "seed" => seed, "key" => key, "score_a" => score, "first" => %{"result" => to_string(first.result), "reason" => first.reason},
             "second" => %{"result" => to_string(second.result), "reason" => second.reason}}
     File.write!(Path.join(Cu.results(), "faceoffs.jsonl"), Cu.json(row) <> "\n", [:append])
+    if score, do: remember(row)
     IO.puts("  #{a} vs #{b} seed #{seed}: #{inspect(score)} (#{first.result} #{first.reason}; #{second.result} #{second.reason})")
     score
   end

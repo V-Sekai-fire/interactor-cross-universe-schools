@@ -279,3 +279,15 @@ planner's answer is the same. The search is unchanged: on four boards the bounds
 check is cached for 15 seconds; the comparison with Turbo's own front end is opt-in (`CU_CHECK_FRONTEND=1`: it said
 "differs" on every solve of five iterations). `CU_DRIVER=player` brings back the old path. The results of the runs
 before this change stand; the two experiments running at the time are restarted on the new code.
+
+## Change of 2026-11-27: a face-off cache (speed and resumption)
+
+A face-off is reused, not played again, when an earlier `results/*/faceoffs.jsonl` row has the same two weightings (a
+split school by its predicate and both weightings), the same seed, and the same model (a hash of `model/turn.mzn` and a
+version number of the match rules). A run that crashes or is stopped therefore resumes where it stopped, and the
+baseline `banker` against `steady` is played once, not once an iteration. Only proved face-offs are kept. The
+calibration lanes (`steady-mirror`, `idle`, `clone`) are never reused: they only mean something when played fresh.
+A reused row is written to the new run's `faceoffs.jsonl` with `"cached": true`, so each run's file is complete.
+Caveat: match scores are not perfectly reproducible (the 64-block search picks among equal-value plans by timing:
+`banker` against `steady` was 4.0, 4.0, 4.0 and then 5.0 points), so a reused score is one sample of that noise;
+the reports say which rows were reused.
