@@ -37,6 +37,23 @@ solve of a run.
 **Consequence here.** None found: every optimum agreed with Chuffed and with the rules evaluator. It is recorded,
 not counted.
 
+## 4. The GPU search with many blocks sometimes returns a corrupted best plan (2026-11-27)
+
+**What.** With 64 blocks (the planner's default), the cooperative GPU kernel now and then ends an exhaustive search
+with a best "solution" that breaks a constraint of the model, and a bound to match it. On the same board the same
+input gives a different answer from run to run; with one block the answer is always right.
+
+**Seen.** Iteration 3, match `idle-steady-6-b`, turn 5 (`steady`, board in the trace): bound -1059, a plan that
+"takes the last life" with a combined attack by units that share no type with the partner. Repeated on that board
+with 64 blocks: -1059 and an illegal plan twice, -55 and a legal plan twice (50 and 10 percent duty both). With one
+block: -55 and the same legal plan, twice. The Lean front end's dump differs from Turbo's own on this board in the
+same three places every run (finding 2 and two more), so the dump does not explain why the answer changes.
+
+**Consequence here.** A solve whose plan is illegal is tried again, up to three times (`tries` in the trace); the
+rules evaluator decides. A bogus best plan can only improve the bound, so it is always the final answer and always
+caught. Not excluded: a race that wrongly cuts a correct branch and returns a legal but worse plan; one block would
+exclude it, at about 9 minutes a solve on a board of this size against seconds.
+
 ## Not checked against a real artifact
 
 No plan was replayed in the rules engine (Galaxy Engine at `14ae23d`). The model follows the engine's source for

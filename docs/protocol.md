@@ -178,3 +178,10 @@ the GPU at a 10 percent duty (`CU_GPU_DUTY_VR`; a launch is 10 percent of a 64 H
 50 percent otherwise (`CU_GPU_DUTY`). The duty of each turn is in `turns.jsonl`. The duty changes only how fast a
 solve runs: every rule above, and what counts as proved, stays. The CPU profile is BCC's `profile-bpfcc` (folded
 stacks, `deploy/ebpf/cross-universe-schools-profile@.service`, one instance per run unit), beside the bpftrace process timing.
+
+## Change of 2026-11-27, after iteration 3's rerun: retries on an illegal plan
+
+Iteration 3's rerun had one turn whose Turbo plan broke the model (`docs/findings.md`, finding 4), so its idle lane
+was 7 of 8 and the round did not run. From then on a player solve whose plan the rules evaluator finds illegal is
+solved again, up to three tries in all, with the 64 GPU blocks as before; the number of tries is in the trace. The
+planted dropped-constraint lane gets no retries. This is a post-hoc change: it was made knowing that result.

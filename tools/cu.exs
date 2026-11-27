@@ -192,7 +192,7 @@ defmodule Cu.Solve do
   end
   def engine, do: "gpu"
   def duty, do: if(vrchat?(), do: System.get_env("CU_GPU_DUTY_VR", "10"), else: System.get_env("CU_GPU_DUTY", "50"))
-  def engine_args("gpu", duty), do: ["--engine", "gpu", "--slice", "500", "--duty", duty, "--max-gpu", "100"]
+  def engine_args("gpu", duty), do: ["--engine", "gpu", "--slice", "500", "--duty", duty, "--max-gpu", "100", "--blocks", System.get_env("CU_GPU_BLOCKS", "64")]
   def turbo(model, dzn) do
     dir = Cu.work()
     chosen = engine()
@@ -250,9 +250,10 @@ defmodule Cu.Run do
     File.write!(path, Cu.Gen.render(board, w))
     path
   end
-  def solve(board, w, lane \\ "player") do
+  def solve(board, w, lane \\ "player", tries \\ 1) do
     path = dzn(board, w)
-    judge(board, w, Cu.Solve.turbo(model_for(lane), path))
+    r = judge(board, w, Cu.Solve.turbo(model_for(lane), path)) |> Map.put(:tries, tries)
+    if lane == "player" and match?({:illegal, _}, r.outcome) and tries < 3, do: solve(board, w, lane, tries + 1), else: r
   end
   def judge(board, w, turbo) do
     outcome = if Cu.Solve.whole?(turbo.plan), do: Cu.Rules.play(board, turbo.plan), else: {:illegal, "no plan"}
@@ -396,7 +397,7 @@ defmodule Cu.Match do
     me = draw(sides[seat], turn)
     board = board(me, sides[other], turn)
     r = Cu.Run.solve(board, w)
-    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty],
+    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries],
             "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
             "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
     File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])
