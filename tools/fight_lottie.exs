@@ -163,13 +163,12 @@ defmodule Cu.Lottie do
     wrap(layers, total, "Cross Universe match #{tag}, unofficial", Enum.map(pieces, &elem(&1, 1)))
   end
   def match_rows(tag) do
-    Path.join(Cu.results(), "turns.jsonl") |> File.stream!() |> Stream.map(&:json.decode/1) |> Enum.filter(&(&1["match"] == tag)) |> Enum.sort_by(& &1["turn"])
+    Path.join(Cu.results(), "turns.yamlld") |> Cu.Ld.stream() |> Enum.filter(&(&1["match"] == tag)) |> Enum.sort_by(& &1["turn"])
   end
 
   def row(level, seed, player) do
     Cu.traces()
-    |> File.stream!()
-    |> Stream.map(&:json.decode/1)
+    |> Cu.Ld.stream()
     |> Enum.filter(&(&1["level"] == level and &1["seed"] == seed and &1["player"] == player and &1["lane"] == "player" and &1["proved"]))
     |> List.last()
   end
