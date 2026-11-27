@@ -175,7 +175,7 @@ Everything in iteration 3 stands, with these changes:
 
 The owner, with VRChat open: "slowly progress". From then on a solve does not wait for VRChat to close; it runs on
 the GPU at a 10 percent duty (`CU_GPU_DUTY_VR`; a launch is 10 percent of a 64 Hz frame) while VRChat runs, and at
-50 percent otherwise (`CU_GPU_DUTY`). The duty of each turn is in `turns.jsonl`. The duty changes only how fast a
+50 percent otherwise (`CU_GPU_DUTY`). The duty of each turn is in `turns.yamlld`. The duty changes only how fast a
 solve runs: every rule above, and what counts as proved, stays. The CPU profile is BCC's `profile-bpfcc` (folded
 stacks, `deploy/ebpf/cross-universe-schools-profile@.service`, one instance per run unit), beside the bpftrace process timing.
 
@@ -250,7 +250,7 @@ plays on every board of the screen. A school, here, is such a class of weighting
 Written before iteration 7 runs, and before iteration 6 (the broad screen) had finished.
 
 Each style that iteration 6 finds, apart from the one `steady` belongs to, is played by its representative weighting
-(the member with the smallest weights, `representative` in `results/iteration-6/summary.json`), at most the 12 largest
+(the member with the smallest weights, `representative` in `results/iteration-6/summary.yamlld`), at most the 12 largest
 styles. Calibration as in iterations 3 to 5 (mirror and idle against `steady`, 8 of 8 or no round). Each representative
 faces `steady` on seeds 1 to 8, two matches a seed, as in iteration 5. A style is **kept as a school** when its
 representative wins 5 or more of the 8 seeds and every solve is proved; seeds scored exactly 1 of 2 are counted as
@@ -282,12 +282,12 @@ before this change stand; the two experiments running at the time are restarted 
 
 ## Change of 2026-11-27: a face-off cache (speed and resumption)
 
-A face-off is reused, not played again, when an earlier `results/*/faceoffs.jsonl` row has the same two weightings (a
+A face-off is reused, not played again, when an earlier `results/*/faceoffs.yamlld` row has the same two weightings (a
 split school by its predicate and both weightings), the same seed, and the same model (a hash of `model/turn.mzn` and a
 version number of the match rules). A run that crashes or is stopped therefore resumes where it stopped, and the
 baseline `banker` against `steady` is played once, not once an iteration. Only proved face-offs are kept. The
 calibration lanes (`steady-mirror`, `idle`, `clone`) are never reused: they only mean something when played fresh.
-A reused row is written to the new run's `faceoffs.jsonl` with `"cached": true`, so each run's file is complete.
+A reused row is written to the new run's `faceoffs.yamlld` with `"cached": true`, so each run's file is complete.
 Caveat: match scores are not perfectly reproducible (the 64-block search picks among equal-value plans by timing:
 `banker` against `steady` was 4.0, 4.0, 4.0 and then 5.0 points), so a reused score is one sample of that noise;
 the reports say which rows were reused.

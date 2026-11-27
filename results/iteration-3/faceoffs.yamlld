@@ -1,0 +1,1456 @@
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady
+b: steady-mirror
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more life
+  result: "1"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: life
+  result: "1"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: life
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: life
+  result: "1"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: life
+  result: "1"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more life
+  result: "1"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: life
+  result: "1"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: idle
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more life
+  result: "1"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more life
+  result: "1"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 0.5
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 0.5
+second:
+  reason: equal
+  result: draw
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+damage
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+kill
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+board
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+life
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "1"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more levels on the field
+  result: "2"
+score_a: 1.0
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: steady+bank
+b: steady
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: both partners fell
+  result: draw
+score_a: 1.5
+second:
+  reason: life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+damage
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+kill
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: more levels on the field
+  result: "1"
+score_a: 2.0
+second:
+  reason: life
+  result: "2"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.5
+second:
+  reason: life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+board
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.5
+second:
+  reason: more levels on the field
+  result: "2"
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+life
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: more life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 3
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: more life
+  result: "2"
+seed: 5
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 6
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: life
+  result: "2"
+score_a: 1.0
+second:
+  reason: life
+  result: "2"
+seed: 7
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Faceoff
+a: banker+bank
+b: banker
+first:
+  reason: equal
+  result: draw
+score_a: 1.0
+second:
+  reason: equal
+  result: draw
+seed: 8

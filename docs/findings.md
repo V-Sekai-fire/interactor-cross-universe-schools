@@ -19,7 +19,7 @@ CUU00074, all weights 1): Chuffed -2, the hand calculation -2, the port -6 with 
 
 **Repro.** In `model/turn.mzn` write the kill sum as
 `sum(j in THEIRS)(their_level[j] * bool2int(not their_stands[mine + 1, j]))`. `tools/cu.exs` does this for the
-dropped-constraint lane (`Cu.Run.faulty_model`); the lane's rows in `results/traces.jsonl` have
+dropped-constraint lane (`Cu.Run.faulty_model`); the lane's rows in `results/traces.yamlld` have
 `"lane":"dropped"`.
 
 **Consequence here.** The model keeps partners out of the kill and board sums and writes `1 - bool2int(b)`. No
@@ -31,7 +31,7 @@ solve is believed on the solver's word: see "Proved" in `docs/protocol.md`.
 that variable at `0 2`; the Lean dump starts it at `-2147483648 2147483647`. The rest of the two dumps is
 byte-equal.
 
-**Seen.** First on test `t05` (one line of 230 differs). `results/traces.jsonl` records `frontend_equal` for every
+**Seen.** First on test `t05` (one line of 230 differs). `results/traces.yamlld` records `frontend_equal` for every
 solve of a run.
 
 **Consequence here.** None found: every optimum agreed with Chuffed and with the rules evaluator. It is recorded,

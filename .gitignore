@@ -1,1 +1,4 @@
 .work/
+ld/.lake/
+ld/_build/
+ld/deps/

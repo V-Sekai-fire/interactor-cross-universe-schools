@@ -1,0 +1,11088 @@
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 1
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 8
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 8
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 0
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 5
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 16
+  - 1
+  - 16
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 0
+  - 2
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 8
+  - 4
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 4
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 5
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 16
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 4
+  - 1
+  - 8
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 16
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 4
+  - 16
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 4
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 1
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 8
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 0
+  - 1
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 8
+  - 16
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 1
+  - 4
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 8
+  - 0
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 4
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 5
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 4
+  - 1
+  - 0
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 2
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 16
+  - 4
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 0
+  - 4
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 8
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 2
+  - 0
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 1
+  - 4
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 4
+  - 16
+  - 1
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 8
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 2
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 8
+  - 4
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 0
+  - 4
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 4
+  - 1
+  - 2
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 0
+  - 16
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 4
+  - 0
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 1
+  - 2
+  - 2
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 16
+  - 1
+  - 16
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 4
+  - 8
+  - 4
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 2
+  - 4
+  - 1
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 5
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 1
+  - 4
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 0
+  - 16
+  - 8
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 5
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 16
+  - 4
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 0
+  - 16
+  - 16
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 1
+  - 8
+  - 8
+  - 0
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 8
+  - 16
+  - 16
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 2
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 2
+  - 8
+  - 1
+  - 8
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 4
+  - 2
+  - 8
+  - 2
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 2
+  - 1
+  - 0
+  - 1
+  - 16
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 2
+  board: 9
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 5
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 4
+  board: 9
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 1
+  board: 4
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 1
+  board: 7
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 4
+  board: 10
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 3
+  board: 6
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 2
+  - 2
+  - 0
+  - 1
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 0
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 1
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 7
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 7
+  damage: 0
+  kills: 3
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 5
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 4
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 6
+  damage: 2
+  kills: 8
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 8
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m1
+outcome:
+  bank: 5
+  board: 0
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 10
+  damage: 3
+  kills: 6
+  life_lost: 0
+proved: true
+seed: 1
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 3
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 2
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 9
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 3
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Solve
+duty: "25"
+level: g2m4
+outcome:
+  bank: 5
+  board: 4
+  damage: 0
+  kills: 0
+  life_lost: 0
+proved: true
+seed: 4
+tries: 1
+vector:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 2

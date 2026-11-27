@@ -11,7 +11,7 @@ defmodule Cu do
   def work, do: Process.get(:cu_work) || System.get_env("CU_WORK", Path.join(@root, ".work"))
   def model, do: Path.join(@root, "model/turn.mzn")
   def results, do: System.get_env("CU_RESULTS", Path.join(@root, "results/iteration-3"))
-  def traces, do: Path.join(results(), "traces.jsonl")
+  def traces, do: Path.join(results(), "traces.yamlld")
   def json(term), do: IO.iodata_to_binary(:json.encode(term))
 end
 
@@ -292,7 +292,7 @@ defmodule Cu.Run do
             "outcome" => show(r.outcome), "value" => r.value, "turbo_bound" => r.turbo.bound, "turbo_nodes" => r.turbo.nodes,
             "turbo_exhaustive" => r.turbo.exhaustive, "solved_at_root" => r.turbo.root, "frontend_equal" => r.turbo.frontend_equal,
             "plan" => show(r.turbo.plan), "board" => cards(board), "engine" => r.turbo[:engine]}
-    File.write!(Cu.traces(), Cu.json(row) <> "\n", [:append])
+    Cu.Ld.append(Cu.traces(), "Solve", row)
     r
   end
   def all(level, name, w, lane \\ "player") do
@@ -346,7 +346,7 @@ defmodule Cu.Frontier do
     {_, report} = Enum.reduce(@candidates, {[{"steady", base}], []}, &candidate(&1, &2, levels))
     proved = Map.new(base, fn {g, rs} -> {key(g), Enum.count(rs, fn {_, r} -> r.proved end)} end)
     summary = %{"lanes" => lanes, "calibrated_levels" => Enum.map(levels, &key/1), "baseline_proved" => proved, "candidates" => Enum.reverse(report)}
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts(Cu.json(summary))
   end
   def candidate(_, {kept, report}, []), do: {kept, report}
@@ -425,7 +425,7 @@ defmodule Cu.Match do
     row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "weights" => Cu.Run.show(w), "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty], "tries" => r[:tries], "stages" => r.turbo[:stages],
             "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
             "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
-    File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])
+    Cu.Ld.append(Path.join(Cu.results(), "turns.yamlld"), "Turn", row)
     next(sides, schools, tag, turn, log ++ [row], r, me, board, seat)
   end
   def next(_sides, _schools, _tag, turn, log, %{proved: false}, _me, _board, _seat), do: %{result: :unproved, reason: "turn #{turn}", log: log}
@@ -455,10 +455,9 @@ defmodule Cu.Match do
     end
   end
   def load_cache do
-    Path.join(Path.dirname(Cu.results()), "*/faceoffs.jsonl")
+    Path.join(Path.dirname(Cu.results()), "*/faceoffs.yamlld")
     |> Path.wildcard()
-    |> Enum.flat_map(&Enum.to_list(File.stream!(&1)))
-    |> Enum.map(&:json.decode/1)
+    |> Enum.flat_map(&Cu.Ld.stream/1)
     |> Enum.filter(&(is_map(&1["key"]) and is_float(&1["score_a"])))
     |> Map.new(&{&1["key"], &1})
   end
@@ -472,7 +471,7 @@ defmodule Cu.Match do
     end
   end
   def reuse(row, a, b, seed) do
-    File.write!(Path.join(Cu.results(), "faceoffs.jsonl"), Cu.json(Map.merge(row, %{"a" => a, "b" => b, "cached" => true})) <> "\n", [:append])
+    Cu.Ld.append(Path.join(Cu.results(), "faceoffs.yamlld"), "Faceoff", Map.merge(row, %{"a" => a, "b" => b, "cached" => true}))
     IO.puts("  #{a} vs #{b} seed #{seed}: #{inspect(row["score_a"])} (cached)")
     row["score_a"]
   end
@@ -483,7 +482,7 @@ defmodule Cu.Match do
     score = if Enum.any?(pa, &is_nil/1), do: nil, else: Enum.sum(pa)
     row = %{"a" => a, "b" => b, "seed" => seed, "key" => key, "score_a" => score, "first" => %{"result" => to_string(first.result), "reason" => first.reason},
             "second" => %{"result" => to_string(second.result), "reason" => second.reason}}
-    File.write!(Path.join(Cu.results(), "faceoffs.jsonl"), Cu.json(row) <> "\n", [:append])
+    Cu.Ld.append(Path.join(Cu.results(), "faceoffs.yamlld"), "Faceoff", row)
     if score, do: remember(row)
     IO.puts("  #{a} vs #{b} seed #{seed}: #{inspect(score)} (#{first.result} #{first.reason}; #{second.result} #{second.reason})")
     score
@@ -533,7 +532,7 @@ defmodule Cu.Faceoff do
     lanes = if only == [], do: lanes(steady), else: %{"mirror_found" => 8, "idle_found" => 8, "reused_from" => "the first run of iteration 5 (it ended in a crash after four candidates)"}
     IO.puts("calibration: #{inspect(lanes)}")
     summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.put(split_round(steady, banker, only), "lanes", lanes), else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts(Cu.json(summary))
   end
   def lanes(steady) do
@@ -547,11 +546,11 @@ defmodule Cu.Faceoff do
     lanes = lanes(steady)
     IO.puts("calibration: #{inspect(lanes)}")
     summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: %{"lanes" => lanes, "styles" => style_entries(limit, steady)}, else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts(Cu.json(summary))
   end
   def style_entries(limit, steady) do
-    styles = Path.join(Path.dirname(Cu.results()), "iteration-6/summary.json") |> File.read!() |> :json.decode() |> Map.fetch!("styles")
+    styles = Path.join(Path.dirname(Cu.results()), "iteration-6/summary.yamlld") |> Cu.Ld.document() |> Map.fetch!("styles")
     others = Enum.reject(styles, fn style -> Enum.any?(style["weightings"], &(&1 == Tuple.to_list(@steady))) end) |> Enum.take(limit)
     for {style, index} <- Enum.with_index(others, 1) do
       vector = List.to_tuple(style["representative"])
@@ -598,7 +597,7 @@ defmodule Cu.Faceoff do
     IO.puts("baseline banker against steady: #{wins(base)} of 8 seeds won, #{total(base)} points of 16")
     summary = %{"lanes" => lanes, "mirror" => row(mirror), "idle" => row(idle), "baseline_banker_vs_steady" => row(base)}
     summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.merge(summary, round(steady, banker, base)), else: Map.put(summary, "round", "not run: calibration under 8 of 8")
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts(Cu.json(summary))
   end
   def round(steady, banker, base, moves \\ [:double]) do
@@ -610,9 +609,9 @@ defmodule Cu.Faceoff do
       "distinct_after" => if(changed, do: distinct_after(finals), else: "no change")}
   end
   def start do
-    previous = Path.join(Path.dirname(Cu.results()), "iteration-3/summary.json")
-    case File.read(previous) do
-      {:ok, text} -> text |> :json.decode() |> Map.get("schools_after") |> after_schools()
+    previous = Path.join(Path.dirname(Cu.results()), "iteration-3/summary.yamlld")
+    case File.exists?(previous) && Cu.Ld.document(previous) do
+      %{} = summary -> summary |> Map.get("schools_after") |> after_schools()
       _ -> [{"steady", @steady}, {"banker", @banker}]
     end
   end
@@ -627,7 +626,7 @@ defmodule Cu.Faceoff do
     IO.puts("calibration: #{inspect(lanes)}")
     rounds = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: rounds(first, second, 1, limit, []), else: "not run: calibration under 8 of 8"
     summary = %{"start" => Map.new([first, second], fn {n, w} -> {n, Tuple.to_list(w)} end), "lanes" => lanes, "rounds" => rounds}
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts(Cu.json(summary))
   end
   def rounds(_a, _b, n, limit, done) when n > limit, do: done
@@ -661,7 +660,7 @@ defmodule Cu.Screen do
     r = Cu.Run.solve(board, Cu.Run.weights(vector))
     outcome = if match?({:illegal, _}, r.outcome), do: %{}, else: Map.take(r.outcome, @metrics) |> Map.new(fn {k, v} -> {to_string(k), v} end)
     row = %{"vector" => Tuple.to_list(vector), "level" => Cu.Run.key(level), "seed" => seed, "proved" => r.proved, "tries" => r[:tries], "duty" => r.turbo[:duty], "outcome" => outcome}
-    File.write!(Path.join(Cu.results(), "screen.jsonl"), Cu.json(row) <> "\n", [:append])
+    Cu.Ld.append(Path.join(Cu.results(), "screen.yamlld"), "Solve", row)
     row
   end
   def run(count \\ 60) do
@@ -677,7 +676,7 @@ defmodule Cu.Screen do
     groups = results |> Enum.filter(fn {_, rows} -> Enum.all?(rows, & &1["proved"]) end) |> Enum.group_by(fn {_, rows} -> signature(rows) end)
     styles = for {sig, members} <- groups, do: style(sig, members)
     summary = %{"weightings" => length(all), "fully_proved" => Enum.sum(Enum.map(groups, fn {_, m} -> length(m) end)), "styles" => Enum.sort_by(styles, &(-&1["size"]))}
-    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    Cu.Ld.write_document(Path.join(Cu.results(), "summary.yamlld"), "Summary", summary)
     IO.puts("styles: #{length(styles)} distinct plays among #{summary["fully_proved"]} fully proved weightings")
   end
   def style(sig, members) do
@@ -687,4 +686,5 @@ defmodule Cu.Screen do
   end
 end
 
+Code.require_file("ld.exs", __DIR__)
 Code.require_file("direct.exs", __DIR__)

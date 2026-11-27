@@ -1,0 +1,533 @@
+---
+"@context":
+  "@vocab": https://v-sekai.org/cross-universe/
+"@type": Summary
+fully_proved: 66
+styles:
+  - mean_outcome:
+      bank: 3.0
+      board: 7.5
+      damage: 0.63
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 2
+      - 1
+      - 4
+      - 0
+      - 0
+    size: 23
+    weightings:
+      - - 2
+        - 1
+        - 4
+        - 0
+        - 0
+      - - 4
+        - 1
+        - 2
+        - 0
+        - 1
+      - - 2
+        - 2
+        - 2
+        - 2
+        - 1
+      - - 2
+        - 1
+        - 4
+        - 2
+        - 2
+      - - 4
+        - 2
+        - 4
+        - 1
+        - 0
+      - - 1
+        - 2
+        - 8
+        - 0
+        - 1
+      - - 4
+        - 1
+        - 8
+        - 1
+        - 0
+      - - 8
+        - 1
+        - 4
+        - 1
+        - 0
+      - - 8
+        - 4
+        - 1
+        - 2
+        - 0
+      - - 1
+        - 4
+        - 8
+        - 4
+        - 0
+      - - 4
+        - 2
+        - 8
+        - 2
+        - 1
+      - - 1
+        - 1
+        - 16
+        - 1
+        - 1
+      - - 1
+        - 8
+        - 8
+        - 2
+        - 1
+      - - 4
+        - 1
+        - 8
+        - 8
+        - 0
+      - - 1
+        - 16
+        - 4
+        - 1
+        - 2
+      - - 16
+        - 4
+        - 4
+        - 1
+        - 0
+      - - 16
+        - 8
+        - 4
+        - 1
+        - 1
+      - - 2
+        - 4
+        - 16
+        - 1
+        - 8
+      - - 1
+        - 16
+        - 16
+        - 2
+        - 0
+      - - 16
+        - 1
+        - 16
+        - 1
+        - 1
+      - - 16
+        - 1
+        - 16
+        - 2
+        - 1
+      - - 8
+        - 16
+        - 16
+        - 0
+        - 1
+      - - 16
+        - 8
+        - 16
+        - 16
+        - 1
+  - mean_outcome:
+      bank: 3.13
+      board: 7.38
+      damage: 0.63
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 8
+      - 8
+      - 0
+      - 1
+      - 0
+    size: 8
+    weightings:
+      - - 8
+        - 8
+        - 0
+        - 1
+        - 0
+      - - 2
+        - 1
+        - 4
+        - 8
+        - 4
+      - - 1
+        - 1
+        - 1
+        - 16
+        - 1
+      - - 1
+        - 2
+        - 8
+        - 1
+        - 8
+      - - 1
+        - 16
+        - 1
+        - 1
+        - 1
+      - - 16
+        - 1
+        - 1
+        - 1
+        - 1
+      - - 4
+        - 8
+        - 4
+        - 1
+        - 4
+      - - 8
+        - 1
+        - 8
+        - 4
+        - 8
+  - mean_outcome:
+      bank: 3.0
+      board: 7.5
+      damage: 0.63
+      kills: 1.75
+      life_lost: 0.0
+    representative:
+      - 2
+      - 0
+      - 4
+      - 2
+      - 1
+    size: 6
+    weightings:
+      - - 2
+        - 0
+        - 4
+        - 2
+        - 1
+      - - 16
+        - 0
+        - 4
+        - 0
+        - 1
+      - - 8
+        - 0
+        - 16
+        - 0
+        - 1
+      - - 1
+        - 0
+        - 16
+        - 8
+        - 1
+      - - 8
+        - 0
+        - 16
+        - 1
+        - 4
+      - - 2
+        - 0
+        - 16
+        - 16
+        - 1
+  - mean_outcome:
+      bank: 3.0
+      board: 7.5
+      damage: 0.0
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 0
+      - 2
+      - 2
+      - 0
+      - 1
+    size: 5
+    weightings:
+      - - 0
+        - 2
+        - 2
+        - 0
+        - 1
+      - - 0
+        - 1
+        - 8
+        - 1
+        - 0
+      - - 0
+        - 1
+        - 8
+        - 0
+        - 2
+      - - 0
+        - 1
+        - 4
+        - 8
+        - 0
+      - - 0
+        - 4
+        - 16
+        - 1
+        - 1
+  - mean_outcome:
+      bank: 5.0
+      board: 5.5
+      damage: 0.63
+      kills: 1.75
+      life_lost: 0.0
+    representative:
+      - 1
+      - 0
+      - 0
+      - 1
+      - 2
+    size: 4
+    weightings:
+      - - 1
+        - 0
+        - 0
+        - 1
+        - 2
+      - - 4
+        - 0
+        - 1
+        - 2
+        - 4
+      - - 2
+        - 0
+        - 1
+        - 1
+        - 8
+      - - 8
+        - 0
+        - 1
+        - 1
+        - 8
+  - mean_outcome:
+      bank: 5.0
+      board: 5.25
+      damage: 0.63
+      kills: 5.13
+      life_lost: 0.0
+    representative:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 4
+    size: 4
+    weightings:
+      - - 1
+        - 1
+        - 1
+        - 1
+        - 4
+      - - 2
+        - 1
+        - 1
+        - 4
+        - 4
+      - - 1
+        - 1
+        - 1
+        - 1
+        - 16
+      - - 1
+        - 4
+        - 1
+        - 8
+        - 8
+  - mean_outcome:
+      bank: 5.0
+      board: 5.13
+      damage: 0.63
+      kills: 5.13
+      life_lost: 0.0
+    representative:
+      - 2
+      - 1
+      - 0
+      - 1
+      - 2
+    size: 3
+    weightings:
+      - - 2
+        - 1
+        - 0
+        - 1
+        - 2
+      - - 8
+        - 2
+        - 0
+        - 1
+        - 4
+      - - 2
+        - 1
+        - 0
+        - 1
+        - 16
+  - mean_outcome:
+      bank: 4.88
+      board: 5.63
+      damage: 0.63
+      kills: 5.13
+      life_lost: 0.0
+    representative:
+      - 4
+      - 1
+      - 2
+      - 1
+      - 4
+    size: 3
+    weightings:
+      - - 4
+        - 1
+        - 2
+        - 1
+        - 4
+      - - 1
+        - 2
+        - 4
+        - 1
+        - 8
+      - - 8
+        - 1
+        - 2
+        - 2
+        - 4
+  - mean_outcome:
+      bank: 3.5
+      board: 7.0
+      damage: 0.0
+      kills: 0.0
+      life_lost: 0.0
+    representative:
+      - 0
+      - 0
+      - 2
+      - 1
+      - 2
+    size: 2
+    weightings:
+      - - 0
+        - 0
+        - 2
+        - 1
+        - 2
+      - - 0
+        - 0
+        - 4
+        - 1
+        - 4
+  - mean_outcome:
+      bank: 5.0
+      board: 5.5
+      damage: 0.63
+      kills: 4.75
+      life_lost: 0.0
+    representative:
+      - 8
+      - 1
+      - 4
+      - 8
+      - 8
+    size: 2
+    weightings:
+      - - 8
+        - 1
+        - 4
+        - 8
+        - 8
+      - - 2
+        - 1
+        - 8
+        - 16
+        - 16
+  - mean_outcome:
+      bank: 4.75
+      board: 5.5
+      damage: 0.63
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 2
+      - 4
+      - 1
+      - 0
+      - 4
+    size: 2
+    weightings:
+      - - 2
+        - 4
+        - 1
+        - 0
+        - 4
+      - - 4
+        - 16
+        - 4
+        - 1
+        - 16
+  - mean_outcome:
+      bank: 4.63
+      board: 5.88
+      damage: 0.63
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 1
+      - 2
+      - 1
+      - 4
+      - 2
+    size: 2
+    weightings:
+      - - 1
+        - 2
+        - 1
+        - 4
+        - 2
+      - - 1
+        - 2
+        - 1
+        - 16
+        - 2
+  - mean_outcome:
+      bank: 5.0
+      board: 5.25
+      damage: 0.0
+      kills: 5.13
+      life_lost: 0.0
+    representative:
+      - 0
+      - 2
+      - 1
+      - 1
+      - 4
+    size: 1
+    weightings:
+      - - 0
+        - 2
+        - 1
+        - 1
+        - 4
+  - mean_outcome:
+      bank: 4.75
+      board: 5.5
+      damage: 0.0
+      kills: 5.38
+      life_lost: 0.0
+    representative:
+      - 0
+      - 16
+      - 1
+      - 16
+      - 4
+    size: 1
+    weightings:
+      - - 0
+        - 16
+        - 1
+        - 16
+        - 4
+weightings: 66
