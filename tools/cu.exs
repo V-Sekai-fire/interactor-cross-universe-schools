@@ -563,3 +563,49 @@ defmodule Cu.Faceoff do
     if {a2, b2} == {a, b}, do: done ++ [entry], else: rounds(a2, b2, n + 1, limit, done ++ [entry])
   end
 end
+
+defmodule Cu.Screen do
+  @values [0, 1, 2, 4, 8, 16]
+  @metrics ~w(damage kills board life_lost bank)a
+  def boards, do: for(level <- [{2, 1}, {2, 4}], seed <- 1..4, do: {level, seed})
+  def normalize(vector) do
+    divisor = vector |> Tuple.to_list() |> Enum.reduce(0, &Integer.gcd/2)
+    if divisor == 0, do: vector, else: vector |> Tuple.to_list() |> Enum.map(&div(&1, divisor)) |> List.to_tuple()
+  end
+  def vectors(count) do
+    :rand.seed(:exsss, {5, 11, 2026})
+    corners = for index <- 0..4, do: put_elem({1, 1, 1, 1, 1}, index, 16)
+    random = for _ <- 1..count, do: List.to_tuple(for _ <- 1..5, do: Enum.random(@values))
+    ([{2, 2, 2, 2, 1}, {2, 2, 2, 2, 8}] ++ corners ++ random) |> Enum.map(&normalize/1) |> Enum.reject(&(&1 == {0, 0, 0, 0, 0})) |> Enum.uniq()
+  end
+  def signature(rows), do: Enum.map(rows, fn row -> Enum.map(@metrics, &row["outcome"][to_string(&1)]) end)
+  def solve_board(vector, {level, seed}) do
+    board = Cu.Gen.level(level, seed)
+    r = Cu.Run.solve(board, Cu.Run.weights(vector))
+    outcome = if match?({:illegal, _}, r.outcome), do: %{}, else: Map.take(r.outcome, @metrics) |> Map.new(fn {k, v} -> {to_string(k), v} end)
+    row = %{"vector" => Tuple.to_list(vector), "level" => Cu.Run.key(level), "seed" => seed, "proved" => r.proved, "tries" => r[:tries], "duty" => r.turbo[:duty], "outcome" => outcome}
+    File.write!(Path.join(Cu.results(), "screen.jsonl"), Cu.json(row) <> "\n", [:append])
+    row
+  end
+  def run(count \\ 60) do
+    File.mkdir_p!(Cu.results())
+    all = vectors(count)
+    IO.puts("screen: #{length(all)} weightings, #{length(boards())} boards each")
+    results =
+      for {vector, index} <- Enum.with_index(all, 1) do
+        rows = Enum.map(boards(), &solve_board(vector, &1))
+        IO.puts("  weighting #{index} of #{length(all)} #{inspect(vector)}: #{Enum.count(rows, & &1["proved"])} of #{length(rows)} boards proved")
+        {vector, rows}
+      end
+    groups = results |> Enum.filter(fn {_, rows} -> Enum.all?(rows, & &1["proved"]) end) |> Enum.group_by(fn {_, rows} -> signature(rows) end)
+    styles = for {sig, members} <- groups, do: style(sig, members)
+    summary = %{"weightings" => length(all), "fully_proved" => Enum.sum(Enum.map(groups, fn {_, m} -> length(m) end)), "styles" => Enum.sort_by(styles, &(-&1["size"]))}
+    File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
+    IO.puts("styles: #{length(styles)} distinct plays among #{summary["fully_proved"]} fully proved weightings")
+  end
+  def style(sig, members) do
+    vectors = members |> Enum.map(fn {v, _} -> Tuple.to_list(v) end) |> Enum.sort_by(&{Enum.sum(&1), &1})
+    mean = for {metric, column} <- Enum.zip(@metrics, 0..4), into: %{}, do: {to_string(metric), Float.round(Enum.sum(Enum.map(sig, &Enum.at(&1, column))) / length(sig), 2)}
+    %{"size" => length(members), "representative" => hd(vectors), "weightings" => vectors, "mean_outcome" => mean}
+  end
+end
