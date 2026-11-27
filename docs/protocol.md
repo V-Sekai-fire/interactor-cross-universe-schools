@@ -223,3 +223,25 @@ threshold, one level of splitting (no split of a split).
 **Not measured**: splits by anything but these three predicates, splits of more than two weightings, a school that
 also changes weights between its own turns by a counter, play against a person.
 
+## Iteration 6: a broad screen for styles
+
+Asked for by the owner (2026-11-27): "you're not searching enough". Iterations 1 to 5 searched near two weightings
+(one weight nudged, or the two switched by a situation); most of that neighbourhood was flat. Written before
+iteration 6 runs, while iteration 5 was in its calibration.
+
+**A style** is a way of playing, not a set of numbers: two weightings have the same style when they make the same
+plays on every board of the screen. A school, here, is such a class of weightings.
+
+- **Weightings**: the five weights each from 0, 1, 2, 4, 8, 16 chosen at random (a fixed seed), the five "one weight
+  at 16, the rest 1" corners, `steady` and `banker`; scaled copies are removed (the plan does not change when every
+  weight is multiplied), and the all-zero weighting. 66 weightings.
+- **Boards**: the one-turn boards of iteration 2: `g2m1` and `g2m4`, seeds 1 to 4 each, 8 boards. Each solve is as
+  in iterations 3 to 5 (Turbo on the GPU, 64 blocks, an illegal plan solved again up to three tries, proved or not).
+- **Signature**: the 8 outcomes (damage, kills, board, life lost, bank). Weightings with equal signatures are one
+  style. Only weightings with all 8 boards proved are grouped.
+- **Result**: the number of styles, the members of each (smallest weights first), and each style's mean outcome.
+  Whether a style wins matches is not measured here: it needs face-offs (a later iteration, on the styles this finds).
+- **GPU duty** 25 percent (10 while VRChat runs), beside iteration 5, which has its own work folder.
+- **Chosen by the agent**: the value set, the random draw, the 8 boards, equality of the signature as "same style".
+- **Not measured**: boards with 3 or more units, hands of more than 3 cards, weights above 16, any match.
+
