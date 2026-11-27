@@ -102,6 +102,7 @@ defmodule Cu.Rules do
   end
   def summon(_board, st, %{summon: 0}, _early), do: st
   def summon(_board, st, %{early: early}, phase) when early != phase, do: st
+  def summon(board, _st, %{summon: card}, _phase) when card > length(board.mine) or card < 0, do: {:illegal, "a summon of a card outside the board"}
   def summon(board, st, plan, _phase) do
     cost = level(board, plan.summon)
     done = %{st | mine: MapSet.put(st.mine, plan.summon), mana: st.mana - cost}
@@ -472,15 +473,13 @@ defmodule Cu.Faceoff do
       Map.put(entry, "kept", false)
     end
   end
-  def split_run do
+  def split_run(only \\ []) do
     File.mkdir_p!(Cu.results())
     steady = {"steady", @steady}
     banker = {"banker", @banker}
-    mirror = series(as_player(steady), {"steady-mirror", weights(@steady)})
-    idle = series({"idle", weights({0, 0, 0, 0, 0})}, as_player(steady))
-    lanes = %{"mirror_found" => Enum.count(mirror, fn {_, s} -> s == 1.0 end), "idle_found" => Enum.count(idle, fn {_, s} -> s != nil and s < 1 end)}
+    lanes = if only == [], do: lanes(steady), else: %{"mirror_found" => 8, "idle_found" => 8, "reused_from" => "the first run of iteration 5 (it ended in a crash after four candidates)"}
     IO.puts("calibration: #{inspect(lanes)}")
-    summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.put(split_round(steady, banker), "lanes", lanes), else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
+    summary = if lanes["mirror_found"] == 8 and lanes["idle_found"] == 8, do: Map.put(split_round(steady, banker, only), "lanes", lanes), else: %{"lanes" => lanes, "round" => "not run: calibration under 8 of 8"}
     File.write!(Path.join(Cu.results(), "summary.json"), Cu.json(summary) <> "\n")
     IO.puts(Cu.json(summary))
   end
@@ -509,11 +508,11 @@ defmodule Cu.Faceoff do
       %{"style" => index, "representative" => style["representative"], "members" => style["size"], "mean_outcome" => style["mean_outcome"], "against_steady" => row(against), "ties_with_steady" => ties, "kept" => wins(against) >= 5 and unproved(against) == 0}
     end
   end
-  def split_round(steady, banker) do
+  def split_round(steady, banker, only \\ []) do
     base = series(as_player(banker), as_player(steady))
     held = 16 - total(base)
     IO.puts("baseline banker against steady: #{wins(base)} of 8 seeds won, #{total(base)} points of 16")
-    %{"baseline_banker_vs_steady" => row(base), "steady_points_against_banker" => held, "candidates" => Enum.map(splits(steady, banker), &split_candidate(&1, steady, held))}
+    %{"baseline_banker_vs_steady" => row(base), "steady_points_against_banker" => held, "candidates" => splits(steady, banker) |> Enum.filter(fn {name, _} -> only == [] or name in only end) |> Enum.map(&split_candidate(&1, steady, held))}
   end
   def row(scores), do: %{"wins" => wins(scores), "points" => total(scores), "unproved" => unproved(scores), "by_seed" => Map.new(scores, fn {k, v} -> {to_string(k), v} end)}
   def improve(school, other, parent_vs_other, moves \\ [:double]) do

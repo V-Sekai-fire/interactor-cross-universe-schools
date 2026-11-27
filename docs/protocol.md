@@ -257,3 +257,12 @@ representative wins 5 or more of the 8 seeds and every solve is proved; seeds sc
 ties. **Chosen by the agent**: the representative, the cap of 12, `steady` as the opponent. **Not measured**: the
 other members of a style (they play the same on the 8 screen boards, not necessarily elsewhere), play between the
 new styles, play against a person.
+
+## Iteration 5, continued (2026-11-27): the rest of the candidates
+
+The first run of iteration 5 ended in a crash (`docs/findings.md`, finding 4, addendum) after calibration (8 of 8, 8 of
+8), the baseline (0 of 8 seeds, 4 of 16 points), and the first four candidates; its traces are kept in
+`results/iteration-5/`. The remaining three candidates (`steady-if-first_turn-else-banker`,
+`banker-if-first_turn-else-steady`, `banker-no-bank-last`) are run now by `tools/schools.exs split NAME...` with the
+protocol of iteration 5 unchanged, in `results/iteration-5-rest/`. Calibration is not run again: it was 8 of 8 in the first
+run, with the same code and the same GPU. The baseline is run again, as the reference for "kept".

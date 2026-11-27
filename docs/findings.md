@@ -54,6 +54,12 @@ rules evaluator decides. A bogus best plan can only improve the bound, so it is 
 caught. Not excluded: a race that wrongly cuts a correct branch and returns a legal but worse plan; one block would
 exclude it, at about 9 minutes a solve on a board of this size against seconds.
 
+**Addendum (2026-11-27): the same race crashed my evaluator.** In iteration 5 a corrupted plan came back with a
+`summon` index that does not exist on the board, and `Cu.Rules.summon` raised on it (`BadMapError`, `nil`), ending
+the run after four candidates and six seeds of the fifth, before the retry could run. The evaluator now calls a
+summon outside the board illegal, so the retry takes it. Only that field was unguarded: the other plan values are
+positions, or are checked against the board before they are used.
+
 ## Not checked against a real artifact
 
 No plan was replayed in the rules engine (Galaxy Engine at `14ae23d`). The model follows the engine's source for
