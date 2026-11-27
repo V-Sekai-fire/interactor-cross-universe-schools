@@ -170,3 +170,11 @@ Everything in iteration 3 stands, with these changes:
 - **Calibration** (mirror and idle, against the first school) runs once at the start; the rounds run only if both
   lanes are 8 of 8.
 - **Chosen by the agent**: halving as the second move, the order, the limit of 3 rounds.
+
+## Ruling of 2026-11-27: slow progress while VRChat runs
+
+The owner, with VRChat open: "slowly progress". From then on a solve does not wait for VRChat to close; it runs on
+the GPU at a 10 percent duty (`CU_GPU_DUTY_VR`; a launch is 10 percent of a 64 Hz frame) while VRChat runs, and at
+50 percent otherwise (`CU_GPU_DUTY`). The duty of each turn is in `turns.jsonl`. The duty changes only how fast a
+solve runs: every rule above, and what counts as proved, stays. The CPU profile is BCC's `profile-bpfcc` (folded
+stacks, `deploy/ebpf/cross-universe-schools-profile.service`), beside the bpftrace process timing.

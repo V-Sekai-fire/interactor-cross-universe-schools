@@ -23,7 +23,8 @@ the root. They are a partial run; a resumed iteration 3 starts again from the be
 folder as a record or move it aside.
 
 Decisions the owner made during the work, which bind the next steps:
-- Turbo runs **on the GPU only**, never the CPU engine; every solve waits while VRChat runs (`Cu.Solve.engine`).
+- Turbo runs **on the GPU only**, never the CPU engine. While VRChat runs it continues at a 10 percent GPU duty
+  (owner, 2026-11-27: "slowly progress"); otherwise at 50 percent (`Cu.Solve.duty`).
 - **No second solver** (Chuffed) from iteration 3 on. "Proved" is in `docs/protocol.md`, iteration 3.
 - A turn that Turbo's preprocessing solves completely (`variables 0`, bound 2147483647) is the one legal play; it is
   counted as `solved_at_root`, not as a failure. The owner asked about it; switching it to a failure is a one-line

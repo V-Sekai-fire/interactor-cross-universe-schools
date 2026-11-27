@@ -190,19 +190,13 @@ defmodule Cu.Solve do
   rescue
     _ -> true
   end
-  def engine do
-    if vrchat?() do
-      IO.puts("VRChat is running: waiting for it to close before the next GPU solve")
-      Process.sleep(30_000)
-      engine()
-    else
-      "gpu"
-    end
-  end
-  def engine_args("gpu"), do: ["--engine", "gpu", "--slice", "500", "--duty", System.get_env("CU_GPU_DUTY", "50"), "--max-gpu", "100"]
+  def engine, do: "gpu"
+  def duty, do: if(vrchat?(), do: System.get_env("CU_GPU_DUTY_VR", "10"), else: System.get_env("CU_GPU_DUTY", "50"))
+  def engine_args("gpu", duty), do: ["--engine", "gpu", "--slice", "500", "--duty", duty, "--max-gpu", "100"]
   def turbo(model, dzn) do
     dir = Cu.work()
     chosen = engine()
+    duty = duty()
     scratch = Path.join([dir, "turbo_solve", "party"])
     [fzn, ozn, cp, ck] = for name <- ~w(x.fzn x.ozn party.cp ck.bin), do: Path.join(dir, name)
     for stale <- [ck, ck <> ".status", Path.join(scratch, "result.txt"), Path.join(scratch, "solution.mzn")], do: File.rm(stale)
@@ -210,9 +204,9 @@ defmodule Cu.Solve do
     {dump, 0} = System.cmd(Path.join(Cu.frontier(), ".lake/build/bin/frontier_frontend"), ["--dump", fzn])
     File.write!(cp, dump)
     env = [{"TMPDIR", dir}, {"ELIXIR_ERL_OPTIONS", "+fnu"}]
-    args = ["600", "elixir", "tools/turbo_player.exs", cp, "--fzn", fzn, "--checkpoint", ck] ++ engine_args(chosen)
+    args = ["600", "elixir", "tools/turbo_player.exs", cp, "--fzn", fzn, "--checkpoint", ck] ++ engine_args(chosen, duty)
     {log, code} = System.cmd("timeout", args, cd: Cu.frontier(), env: env, stderr_to_stdout: true)
-    read(scratch, ozn, code, log) |> Map.put(:frontend_equal, frontend_equal?(fzn, dump)) |> Map.put(:engine, chosen) |> Map.put(:root, root?(dump))
+    read(scratch, ozn, code, log) |> Map.put(:frontend_equal, frontend_equal?(fzn, dump)) |> Map.put(:engine, chosen) |> Map.put(:duty, duty) |> Map.put(:root, root?(dump))
   end
   def root?(dump), do: String.starts_with?(dump, "bot 0\nvariables 0\n")
   def frontend_equal?(fzn, dump) do
@@ -402,7 +396,7 @@ defmodule Cu.Match do
     me = draw(sides[seat], turn)
     board = board(me, sides[other], turn)
     r = Cu.Run.solve(board, w)
-    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine],
+    row = %{"match" => tag, "turn" => turn, "seat" => seat, "school" => name, "proved" => r.proved, "engine" => r.turbo[:engine], "duty" => r.turbo[:duty],
             "board" => Cu.Run.cards(board), "plan" => Cu.Run.show(r.turbo.plan), "outcome" => Cu.Run.show(r.outcome),
             "turbo_bound" => r.turbo.bound, "value" => r.value, "solved_at_root" => r.turbo.root}
     File.write!(Path.join(Cu.results(), "turns.jsonl"), Cu.json(row) <> "\n", [:append])

@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2026 K. S. Ernest (iFire) Lee
+# SPDX-License-Identifier: MIT
+# System unit (eBPF needs root): BCC's profile at 49 Hz, folded and symbolized stacks in 10-minute windows, for as
+# long as the face-off unit's cgroup exists. Edit RUN for the iterate unit. Install: sudo systemctl link <this file>.
+[Unit]
+Description=eBPF CPU profile (profile-bpfcc, folded stacks) of the Cross Universe face-off run
+
+[Service]
+Type=simple
+Nice=19
+CPUQuota=20%
+MemoryMax=512M
+Environment=RUN=cross-universe-schools.service
+Environment=OUT=/mnt/fire/3-interactor/interactor-cross-universe-schools/.work/ebpf
+ExecStart=/bin/sh -c 'CG=/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/$RUN; mkdir -p $OUT; while [ -d $CG ]; do /usr/sbin/profile-bpfcc -F 49 -f 600 > $OUT/profile-$(date -u +%%Y%%m%%dT%%H%%M%%S).folded 2>> $OUT/profile.err; done'
