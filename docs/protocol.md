@@ -1,0 +1,113 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- Copyright (c) 2026 K. S. Ernest (iFire) Lee -->
+
+# Protocol: schools of play style by frontier learning
+
+Written and committed before the first run of the loop. A rule changed after a result is a post-hoc decision and
+the changelog says so. What was already known when this was written is in "Before the run".
+
+## Words
+
+- **Board**: one turn of mine. My partner, `g` units on the field and 2 cards in hand, against their partner and
+  `g` units; both players at 1000 life; `mana` is what I hold after the mana supply phase. Cards are the units of
+  the pinned rules engine that have no abilities (11 of 220), at most three copies a side, partners of level 5 or
+  lower. A board on which the turn could take all their life is not drawn (the sum of my attack minus their
+  partner's defense is under their life): after a win nothing is style.
+- **Turn**: retire once, summon once, each before or after the battle; any unit attacks once; a combined attack
+  needs the partner and a shared type. The partner is never retired.
+- **Level**: `(g, mana)`. Levels of this run: `g2m1` (poor) and `g2m4` (rich).
+- **Problem**: a level with a seed. Seeds 1 to 8.
+- **Player**: a weighting `(damage, kill, board, life, bank)` of five outcomes: life taken from them (hundreds),
+  levels of their units destroyed, levels of my units on the field at the end, life I lose (hundreds), and the
+  mana I will hold after my next mana supply phase. A player plays the plan that minimises
+  `life * life_lost - damage * damage_dealt - kill * kills - board * board_left - bank * banked`.
+- **Outcome**: the five numbers of a plan, computed by `Cu.Rules.play` from the plan alone, not read from a solver.
+
+## Proved
+
+A solve counts only when all of these hold:
+
+1. the Turbo port on the CPU reports an exhaustive search;
+2. Chuffed proves an optimum and it equals Turbo's bound;
+3. the plan Turbo returns is legal and its outcome, weighed by the player, equals that bound.
+
+Whether the Lean front end's dump is byte-equal to the dump of Turbo's own preprocessing is recorded for every
+solve and reported, but is not part of the definition.
+
+## Success
+
+Player A is **distinct** from player B on a problem when both solves are proved and each strictly prefers its own
+plan: B's outcome is strictly worse than A's by A's weights, and A's outcome is strictly worse than B's by B's
+weights. An outcome that differs only because a player is indifferent is search order, not style, and fails.
+
+A candidate **succeeds** on a problem when it is distinct from every school kept so far. A cell is a level and a
+candidate, with `s` successes of 8. Regret is `1[s >= 1] - s / 8`. A cell with regret above 0 is the frontier.
+
+## Planted defects
+
+Each level also runs two lanes. A level is **calibrated** when both lanes are found on 8 of 8 problems; results
+count only on calibrated levels.
+
+- **clone**: the baseline under a second name with every weight doubled. Found when it is reported not distinct
+  from the baseline. It catches a test that takes different numbers for a different style.
+- **dropped constraint**: the model with the kill sum written as `bool2int(not their_stands[...])` over every
+  unit, the form for which Turbo's own front end refuses the model and the Lean port drops a constraint. Found when
+  the solve is reported not proved. It catches a check that believes the solver.
+
+A lane under 8 of 8 leaves its level uncalibrated in this run; mutating one attribute of the lane is then the next
+iteration, not a waiver.
+
+## Schools
+
+The baseline `steady = (2, 2, 2, 2, 1)` is kept first: a level on the field is worth two mana, so that retiring a
+unit for its level in mana is not a tie. Candidates, in this order, each multiply ONE weight of the baseline by
+the ladder 2, 4, 8:
+
+| Candidate | Weight raised |
+|-----------|---------------|
+| `striker` | damage |
+| `hunter` | kill |
+| `keeper` | board |
+| `warden` | life |
+| `banker` | bank |
+
+A candidate starts on the first rung. While it has a frontier cell and a rung is left, the next rung is tried, and
+is kept only if the sum of `s` over calibrated levels rises. A candidate is **kept as a school** when a calibrated
+level has `s = 8`. Anything else is reported with its counts as the frontier, not a school yet.
+
+## Winner rule
+
+There is no winner between schools: they are kept or not. Between two rungs of one candidate the higher sum of `s`
+wins and a tie goes to the lower rung.
+
+## Chosen by the agent, not by a manual
+
+The five outcomes and their units, the baseline, the candidate names and order, the ladder, the levels, the life
+totals, the hand of 2, the partner level limit, the rule against winnable boards, the two lanes, and the
+definition of distinct.
+
+## Before the run
+
+These were seen before this page was committed, with Chuffed alone except where said, and shaped it:
+
+- A first model with fights only: five opposite weightings changed the play on 1 of 32 boards (2 to 5 units a
+  side). Retire, summon and mana were added because of that.
+- With them, at mana drawn from 0 to 5: the play changed on 7 of 8 boards at 2 units a side and 6 of 8 at 3, almost
+  all of it for the bank weighting (11 of 16), which never changed the play when mana was already full. So mana is
+  an attribute of the level here, not a draw.
+- 3 of those 16 boards could be won in the turn. So winnable boards are not drawn.
+- Turbo on the CPU, one solve each: `g2m1` 4.3 s and 4,685 nodes; `g3m1` 49.7 s and 149,193 nodes; `g3m4` 34.5 s and
+  89,253 nodes; each proved. The levels with 3 units a side are left out of this run for time.
+
+## Real artifact
+
+Findings on a real artifact are their own lane and are never averaged into a rate: the Turbo port's dropped
+constraint, the Lean front end's dump that differs from Turbo's own on boards with a hand, and any difference
+between a plan's outcome here and in the pinned rules engine, if that replay is built.
+
+## Not measured in this run
+
+3 or more units a side, more than one turn, a reply by the other player, cards with abilities, spells and items,
+retiring the partner (the engine lists it as eligible and the translated rules say it cannot leave the field),
+hidden information, play against a person, the rules engine's own verdict on any plan.
+
