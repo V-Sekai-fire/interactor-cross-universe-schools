@@ -1,11 +1,39 @@
 <!-- SPDX-License-Identifier: MIT -->
 <!-- Copyright (c) 2026 K. S. Ernest (iFire) Lee -->
 
-# Resume: Cross Universe schools of play style (parked 2026-11-26)
+# Resume: Cross Universe schools of play style (parked 2026-11-26, handed to Hermes 2026-11-27)
 
 Parked by the owner's "halt all work", so it can be resumed offline, by another person, on another computer.
 Branch `dev/schools` holds everything; `main` holds only the first commit. Nothing was pushed: no GitHub
 repository exists yet (the name `V-Sekai-fire/interactor-cross-universe-schools` was free on 2026-11-26).
+
+## Handover to Hermes (2026-11-27, owner: "transfer to hermes a2a")
+
+The Claude session that built this hands it to the Hermes agent over A2A. Its monitors die with it; the runs do not.
+
+**What runs now** (systemd user units, GPU only, slow while VRChat runs): check with
+`systemctl --user show cross-universe-schools-split cross-universe-schools-screen cross-universe-schools-styles -p ActiveState`;
+logs `.work/split.log`, `.work/screen.log`, `.work/styles.log`; results `results/iteration-5`, `-6`, `-7`; each unit
+writes `summary.json` when it ends. Rough ends (UTC, 2026-11-27): screen 17:35, splits 18:30, styles about 2 hours after
+the screen. An `eBPF` profile of each runs beside it (`.work/ebpf/`).
+
+**Your next steps, in order. Each new experiment gets its protocol written and committed BEFORE it runs.**
+1. When iteration 5 ends: read `results/iteration-5/summary.json`; add its entry to `CHANGELOG.md` (lanes, baseline,
+   each candidate's seeds won, points, ties; what was kept) from the traces, not from memory.
+2. When iteration 6 ends: the same for `results/iteration-6/summary.json` (the number of styles, members, mean outcomes).
+3. When iteration 7 ends: the same; it is the iteration that says whether a style beats `steady` (5 of 8 seeds).
+4. Commit on `dev/schools`, authored as the owner, no agent credit, no trailing period.
+5. If nothing beat `steady`, say so plainly. Ideas not tried: matches longer than 6 turns, a lookahead past one turn,
+   boards with 3 or more units a side.
+6. Report to the owner every 5 minutes while anything runs (owner, 2026-11-27: "keep to 5 minute cycles"), and say
+   what you did not check.
+
+**Owner rulings that bind you**: Turbo on the GPU only, 10 percent duty while VRChat runs, no second solver; do not
+push, publish, create a repository or merge without asking the owner (publishing was approved once and then
+overtaken); do not use the VRChat trademark in names; the owner is an individual, not a company; Cross Universe
+card data is read at run time and never committed. Never print or log a token.
+
+**Do not**: stop or restart a running unit, delete results, or run a second GPU job beside the three above.
 
 ## Where things stand
 
@@ -15,12 +43,11 @@ Read `docs/mission.md`, `docs/protocol.md` and `CHANGELOG.md` first.
 |-----------|-------|--------|
 | 1, one turn, one rung | done | no school kept |
 | 2, one turn, rungs 4 and 8 | done | `banker` = `(2, 2, 2, 2, 8)` kept as a school (8 of 8 and 7 of 8 boards) |
-| 3, face-off matches | **halted** | mirror lane 8 of 8 done; idle lane 2 seeds of 8 (idle lost both); baseline and the improvement round never ran |
-| 4, self-improving rounds | written, never started | protocol section and `tools/schools.exs iterate` committed |
-
-Iteration 3's partial traces are in `results/iteration-3/`: 122 turns, every one proved on the GPU, none solved at
-the root. They are a partial run; a resumed iteration 3 starts again from the beginning (see below), so keep the
-folder as a record or move it aside.
+| 3, face-off matches | done (2026-11-27) | `banker` loses every seed to `steady` (0 of 8, 4 of 16 points); no mutation kept; 1,185 turns, all proved |
+| 4, self-improving rounds | stopped early | 12 one-weight moves of `steady` tied (one lost a seed); nothing kept |
+| 5, split schools | **running** (user unit `cross-universe-schools-split`) | 4 of 7 candidates in, none kept; `steady-if-behind-else-banker` won 1 seed |
+| 6, broad screen of 66 weightings (one turn) | **running** (`cross-universe-schools-screen`) | partway: 11 styles among the first 24 weightings |
+| 7, the styles face `steady` | **queued**: starts by itself when 6 ends (`cross-universe-schools-chain7`) | `tools/schools.exs styles` |
 
 Decisions the owner made during the work, which bind the next steps:
 - Turbo runs **on the GPU only**, never the CPU engine. While VRChat runs it continues at a 10 percent GPU duty
