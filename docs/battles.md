@@ -12,7 +12,7 @@ number is the level, the red number the attack, the blue number the defense and 
 bars are life (seat 1 left, seat 2 right, 10 is full); the white number at the top is the turn; the yellow number is the
 mana the player holds; the dimmed row at the bottom is the hand. An attacker lunges at its target; a destroyed card fades.
 
-| Clip | Match (in `turns.jsonl`) | What it shows |
+| Clip | Match (in `turns.yamlld`) | What it shows |
 |------|--------------------------|---------------|
 | `iteration-3-banker-first-loses-seed1` | `banker-steady-1-a` in `results/iteration-3` | `banker` moves first and loses on life after 4 turns |
 | `iteration-3-banker-second-wins-seed1` | `banker-steady-1-b` | the same deal with the seats swapped: `banker` wins on life after 6 turns |

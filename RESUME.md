@@ -17,13 +17,13 @@ Its monitors die with it; the runs do not.
 **What runs now** (systemd user units, GPU only, slow while VRChat runs): check with
 `systemctl --user show cross-universe-schools-split cross-universe-schools-screen cross-universe-schools-styles -p ActiveState`;
 logs `.work/split.log`, `.work/screen.log`, `.work/styles.log`; results `results/iteration-5`, `-6`, `-7`; each unit
-writes `summary.json` when it ends. Rough ends (UTC, 2026-11-27): screen 17:35, splits 18:30, styles about 2 hours after
+writes `summary.yamlld` when it ends. Rough ends (UTC, 2026-11-27): screen 17:35, splits 18:30, styles about 2 hours after
 the screen. An `eBPF` profile of each runs beside it (`.work/ebpf/`).
 
 **Your next steps, in order. Each new experiment gets its protocol written and committed BEFORE it runs.**
-1. When iteration 5 ends: read `results/iteration-5/summary.json`; add its entry to `CHANGELOG.md` (lanes, baseline,
+1. When iteration 5 ends: read `results/iteration-5/summary.yamlld`; add its entry to `CHANGELOG.md` (lanes, baseline,
    each candidate's seeds won, points, ties; what was kept) from the traces, not from memory.
-2. When iteration 6 ends: the same for `results/iteration-6/summary.json` (the number of styles, members, mean outcomes).
+2. When iteration 6 ends: the same for `results/iteration-6/summary.yamlld` (the number of styles, members, mean outcomes).
 3. When iteration 7 ends: the same; it is the iteration that says whether a style beats `steady` (5 of 8 seeds).
 4. Commit on `dev/schools`, authored as the owner, no agent credit, no trailing period.
 5. If nothing beat `steady`, say so plainly. Ideas not tried: matches longer than 6 turns, a lookahead past one turn,
@@ -80,6 +80,7 @@ system tools.
 | the rules engine, commit `14ae23d` (card data) | `/mnt/fire/6-datasource/galaxy-engine-14ae23d` (`GALAXY_ENGINE`) | `git/galaxy-engine.bundle` |
 | MiniZinc 2.11.0 | `/mnt/fire/6-datasource/minizinc-bundle/x/MiniZincIDE-2.11.0-x86_64-linux-gnu` (`MINIZINC_HOME`) | `tools/mzn.tgz` |
 | the GPU host, its cubin (sm_89) and Turbo's own dump oracle | `/mnt/fire/6-datasource/turbo-runs` (fixed path in the planner's `tools/turbo_gpu.exs`; `TURBO_ORACLE` for the oracle) | `tools/turbo-runs.tar` |
+| the YAML-LD tool (`ld/`, Lean 4 + `leanler`: `cd ld && mix deps.get && mix compile`) | `ld/_build/dev/lib` (`CU_LD_BUILD`) | not in the park (built from `ld/` and the pinned `lean-yaml-ld`) |
 | ThorVG 1.1.4 `tvg-lottie2gif` | `/mnt/fire/6-datasource/thorvg-1.1.4-linux/build/tools/lottie2gif/` (`THORVG_LOTTIE2GIF`) | `tools/thorvg-1.1.4.tar.xz` and the prebuilt binary |
 | Elixir 1.18 or later on OTP 27 or later, `g++`, `ffmpeg`, an NVIDIA driver with CUDA | on `PATH` | not included |
 | `bpftrace` and root, only for the profile | on `PATH` | not included |
@@ -119,7 +120,7 @@ for a rebuild without network. Check the restore with `elixir tools/schools.exs 
   `deploy/cross-universe-schools.service` (`systemctl --user link` it first). About 1.5 minutes a seed on a shared RTX
   4090, so about 3 hours. The profile: `deploy/ebpf/faceoff.bt` with `bpftrace` as root, its cgroup path edited.
 - **Iteration 4**: after iteration 3 ends, `deploy/cross-universe-schools-iterate.service` (`tools/schools.exs
-  iterate`); it reads iteration 3's `summary.json` for its starting schools.
+  iterate`); it reads iteration 3's `summary.yamlld` for its starting schools.
 - **Then**: the changelog entries from the traces, match videos with `tools/fight_lottie.exs match TAG OUT.lot video`
   (a sample of a test match is in the park's `videos/`), and publishing if the owner still wants it.
 

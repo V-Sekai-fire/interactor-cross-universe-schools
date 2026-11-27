@@ -4,7 +4,7 @@
 # Changelog
 
 The frontier-learning record: what was tried, whether frontier success rose, what was kept. Counts are recounted
-from `results/iteration-N/traces.jsonl`.
+from `results/iteration-N/traces.yamlld`.
 
 ## Iteration 1 (2026-11-26): the protocol as first committed
 
@@ -108,7 +108,7 @@ Turbo player and its GPU preparation on every solve), then the GPU host (6.9), t
 Started from iteration 3's schools; calibration 8 of 8 on both lanes; round 1's baseline `banker` against `steady`
 was 0 of 8 seeds, 4 of 16 points, the same as iteration 3. Stopped during `steady-bank`, 12 moves in, because the
 result was predictable and the owner's next idea (splitting the schools, iteration 5) was waiting behind it. 1,155
-turns, all proved, one retry (it succeeded). No `summary.json`: the run did not finish. Traces are in
+turns, all proved, one retry (it succeeded). No `summary.yamlld`: the run did not finish. Traces are in
 `results/iteration-4/`.
 
 | Moves of `steady` (11 finished, one weight changed each) | Seeds won against `steady` | Seeds tied |
@@ -167,7 +167,7 @@ not whether they win.
 | board kept | 7.5, 5.1 to 5.9, 7.0 | the banking styles keep fewer levels |
 
 `life_lost` is 0.0 on every board and style: the one-turn boards give the opponent no reply. Representatives and
-mean outcomes of each style are in `results/iteration-6/summary.json`.
+mean outcomes of each style are in `results/iteration-6/summary.yamlld`.
 
 **Reading.** The neighbourhood of `steady` (iterations 1 to 5) is one style out of 14, which is why nudging one
 weight there changed nothing: 23 of 66 weightings play like `steady`. The other 13 are untried in matches.
