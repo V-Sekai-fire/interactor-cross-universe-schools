@@ -67,3 +67,38 @@ Started from `900c6e1` on the GPU. Halted by the owner after the mirror lane (8 
 and 2 seeds of the idle lane (idle scored 0 on both). 122 turns, all proved on the GPU, none solved at the root.
 No baseline, no improvement round, so nothing is kept or changed; the partial traces and the eBPF profile are in
 `results/iteration-3-halted-20261126/`. Resume from `RESUME.md`.
+
+## Iteration 3 (2026-11-27): the schools face off (`593e1a7`)
+
+**Tried.** Matches of 6 turns, two seats, 8 seeds; Turbo on the GPU only, 64 blocks, a turn retried when its plan is
+illegal (finding 4). 1,185 turns, all proved, none needed a retry, none solved at the root; 976 at 50 percent duty and
+209 at 10 percent while VRChat ran. 104 face-offs. An earlier rerun that hit the race is kept as
+`results/iteration-3-provisional-20261127/`.
+
+**Calibration.** Mirror 8 of 8 (exactly 1 of 2 on every seed), idle 8 of 8 (idle lost every seed).
+
+**Baseline.** `banker` against `steady`: 0 of 8 seeds won, 4 of 16 points (per seed 1, 1, 0, 0, 1, 0, ½, ½). In
+whole matches the school that banks mana never beats the balanced one.
+
+**Improvement round.** No mutant reached 5 of 8, so nothing was kept.
+
+| Mutant | Seeds won against its parent | Points of 16 |
+|--------|------------------------------|--------------|
+| every `steady` mutant (each weight doubled) | 0 | 8 (a tie on every seed: it plays exactly like `steady`) |
+| `banker+damage` | 1 | 8.5 |
+| `banker+kill`, `banker+life`, `banker+bank` | 0 | 8 |
+| `banker+board` `(2, 2, 4, 2, 8)` | 3 | 10 |
+
+**Frontier success.** `banker+board` is the frontier: better than its parent on some seeds, not reliably.
+**Kept.** `steady` and `banker` unchanged.
+
+**Reading.** Doubling one weight does not change `steady`'s play at all; for `banker` only the board weight moves
+it in a useful direction, back toward keeping units, which is what `steady` does.
+
+**Profile** (BCC `profile`, 12 windows of 10 minutes, the whole host): of the run's own processes the Erlang
+runtime took the most CPU (a scheduler at 16 percent of all samples, mostly starting a fresh `elixir` for the
+Turbo player and its GPU preparation on every solve), then the GPU host (6.9), the planner (3.4) and MiniZinc
+(2.6). Other work on the host (PolyFEM 24, a C++ compile 17) took more. Erlang frames are not resolved: BEAM needs
+`+JPperf true` for that. Not measured: the GPU kernels, and VRChat's frame times.
+
+**Not measured.** Longer matches, lookahead past one turn, bigger moves than doubling.
